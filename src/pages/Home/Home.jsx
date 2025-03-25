@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../../components/layouts/Header/Header'
+import BannerCarousel from '../../components/ul/BannerCarousel/BannerCarousel'
 
 const Home = () => {
   return (
     <div className="Home-page">
       <main>
-        <Header />
+        <BannerCarousel />
       </main>
     </div>
   );
