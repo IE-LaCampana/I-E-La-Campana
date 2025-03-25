@@ -73,7 +73,7 @@ const Navbar = () => {
         <ItemNavbar route="/" content="SEDES EDUCATIVAS" dropdownItemns={sedesEducativasDropdown} />
         <ItemNavbar route="/" content="NUESTRA INSTITUCIÓN" dropdownItemns={nuestraInstitucionDropdown} />
         <ItemNavbar route="/" content="PROGRAMAS ACADEMICOS" dropdownItemns={programasAcademicosDropdown} />
-        <ItemNavbar route="/" content="ACCESO" dropdownItemns={accesoDropdown} />
+        <ItemNavbar route="/" content="INGRESAR" dropdownItemns={accesoDropdown} />
         <ItemNavbar route="/" content="VIDA ESTUDIANTIL" dropdownItemns={vidaEstudiantilDropdown} />
         <ItemNavbar route="/" content="DOCENTES" dropdownItemns={docentesDropdown} />
         <ItemNavbar route="/"content="ESTUDIANTES" dropdownItemns={estudiantesDropdown} />
