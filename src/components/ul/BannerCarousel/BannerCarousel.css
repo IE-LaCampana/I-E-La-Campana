@@ -1,22 +1,27 @@
 @import '../../../styles/Varibles.css';
-.banner-carousel{
+
+.banner-carousel {
     position: relative;
     width: 100%;
     height: 600px;
     overflow: hidden;
 }
-.background-slider{
+
+.background-slider {
     height: 100%;
 }
-.slide{
+
+.slide {
     height: 600px;
 }
-.slide img{
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.group-label{
+
+.group-label {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -26,8 +31,8 @@
     font-weight: 500;
     z-index: 10;
 }
-.group-label span{
-    
+
+.group-label span {
     font-size: 18px;
     display: flex;
     gap: 10px;
@@ -36,25 +41,48 @@
     font-weight: 600;
     color: #e5e5e5 !important;
 }
-.control-button{
+
+.carousel-navigation {
     position: absolute;
     bottom: 20px;
     left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.control-button {
     background-color: #0c2c48;
     color: #e5e5e5 !important;
     font-family: 'Montserrat', sans-serif;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 10px 16px;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
-    z-index: 10;
 }
-.control-button i{
+
+.prev-button,
+.next-button {
+    background-color: #0c2c48;
+    color: #e5e5e5 !important;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-button i,
+.prev-button i,
+.next-button i {
     font-size: 1.25rem !important;
 }
-.center-content{
+
+.center-content {
     position: absolute;
     top: 30%;
     left: 30%;
@@ -70,13 +98,16 @@
     width: 60%;
     max-width: 600px;
 }
+
 .welcome-text {
     margin-top: 10px;
 }
-.welcome-text p{
+
+.welcome-text p {
     font-size: 16px;
     color: #666;
 }
+
 .slick-dots {
     z-index: 10px;
     text-align: center;
@@ -86,9 +117,10 @@
     list-style: none;
     top: 90.5%;
 }
-.custom-dot{
-    width: 14px !important;
-    height: 14px !important;
+
+.custom-dot {
+    width: 15px !important;
+    height: 15px !important;
     margin: 0 10px;
     padding: 0;
     cursor: pointer;
@@ -97,12 +129,15 @@
     margin: 0 5px;
     background: transparent;
 }
-.custom-dot.active{
-    background-color: white;
+
+.custom-dot.active {
+    background-color: #308113;
 }
-.slick-dots li{
+
+.slick-dots li {
     margin: 0;
 }
-.slick-dots li button::before{
+
+.slick-dots li button::before {
     display: none;
 }

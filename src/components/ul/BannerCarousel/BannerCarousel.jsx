@@ -82,33 +82,52 @@ const BannerCarousel = () => {
         } else {
             sliderRef.current.slickPlay();
         }
-    };
+  };
+  
+  const goToPrevSlide = () => {
+    sliderRef.current.slickPrev();
+  }
+  
+  const goToNextSlide = () => {
+    sliderRef.current.slickNext();
+
+  }
+
 
 
   return (
     <div className="banner-carousel">
       <div className="group-label">
-        {slides[currentSlide].image === WelcomeImage ? ( 
+        {slides[currentSlide].image === WelcomeImage ? (
           <span>Aquí comienzan los grandes sueños</span>
-        ) : slides[currentSlide].image === MisakBand ? ( 
-        <span>Misak Band</span>
-        ) : ( 
-        <span>Grupo <strong>{slides[currentSlide].group}</strong></span>
+        ) : slides[currentSlide].image === MisakBand ? (
+          <span>Misak Band</span>
+        ) : (
+          <span>
+            Grupo <strong>{slides[currentSlide].group}</strong>
+          </span>
         )}
+      </div>
+      <div className='carousel-navigation'>
+        <div className='prev-button' onClick={goToPrevSlide}>
+          <i className='bi bi-chevron-left'></i>
+        </div>
+        <div className="control-button" onClick={togglePlayPause}>
+          {isPlaying ? (
+            <>
+              <i className="bi bi-pause-fill"></i> Detener
+            </>
+          ) : (
+            <>
+              <i className="bi bi-play-fill"></i>Reproducir
+            </>
+          )}
+        </div>
+        <div className="next-button" onClick={goToNextSlide}>
+          <i className="bi bi-chevron-right"></i>
+        </div>
       </div>
 
-      <div className="control-button" onClick={togglePlayPause}>
-        {isPlaying ? (
-          <>
-            <i className="bi bi-pause-fill"></i> Detener
-          </>
-        ) : (
-          <>
-            <i className="bi bi-play-fill"></i>Reproducir
-          </>
-        )}
-      </div>
-      
       <Slider ref={sliderRef} {...settings} className="background-slider">
         {slides.map((slide, index) => (
           <div key={index} className="slide">
