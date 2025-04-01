@@ -1,0 +1,20 @@
+@import '../../../styles/Varibles.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+.logo {
+    display: flex;
+    align-items: center;
+    height: 4.1rem;
+
+}
+.logo img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.logo h1{
+    color: #e5e5e5;
+    font-size: 22px;
+    margin: 0 10px;
+    --theme-text-transform: uppercase;
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-heading-weight);
+}

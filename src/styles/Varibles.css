@@ -1,0 +1,75 @@
+:root{
+    --color-primario: #ffffff;  /* Blanco */
+    --color-secundario: #000000; /* Negro */
+    --color-acento-1: #e02059;  /* Rosa intenso */
+    --color-acento-2: #354e9e;  /* Azul oscuro */
+    --color-acento-3: #a9b0b3;  /* Gris claro */
+    --theme-palette-color-4: #192a3d;
+    --bs-white-rgb: 255, 255, 255;
+
+
+    /* Sombra de Caja */
+        --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        --font-body: 'Open Sans', sans-serif;
+        --font-heading: 'Playfair Display', serif;
+        --font-accent: 'Caveat', cursive;
+    
+        /* Fuentes serif */
+        --font-merriweather: 'Cabin', serif;
+        --clibre: 'Cabin', serif;
+        --font-lora: 'Cabin', serif;
+        --font-cormorant: 'Cabin', serif;
+        --font-playfair-display: 'Cabin', serif;
+        --font-crimson-text: 'Cabin', serif;
+    
+        /* Fuentes sans-serif */
+        --font-open-sans: 'Cabin', sans-serif;
+        --font-lato: 'Cabin', sans-serif;
+        --font-roboto: 'Cabin', sans-serif;
+        --font-montserrat: 'Cabin', sans-serif;
+        --font-poppins: 'Cabin', sans-serif;
+        --font-nunito: 'Cabin', sans-serif;
+        --font-logo: 'Cabin', serif;
+        --font-logo-weight: 700;
+        --font-logo-style: normal;
+        --font-heading: "Cabin", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        --font-heading-weight: 400;
+        --font-heading-style: normal;
+        --font-heading-bold-weight: bold;
+        --font-body: Cabin, sans-serif;
+        --font-body-weight: 400;
+        --font-body-style: normal;
+        --font-body-bold-weight: 500;
+    
+        /* Fuentes display */
+        --font-bebas-neue: 'Bebas Neue', cursive;
+        --font-pacifico: 'Pacifico', cursive;
+        --font-quicksand: 'Quicksand', sans-serif;
+        --font-amatic-sc: 'Amatic SC', cursive;
+        --font-caveat: 'Caveat', cursive;
+        --ft1: "Hope Sans", sans-serif;
+    
+        /* Variables para uso general */
+        --font-heading: var(--font-playfair-display);
+        --font-subheading: var(--font-montserrat);
+        --font-body: var(--font-open-sans);
+        --font-accent: var(--font-caveat);
+    
+        --font-size-base: 16px;
+        --font-size-accent: 1.2em;
+        --font-size-product-title: 24px;
+        --font-size-product-description: 14px;
+        --font-size-price: 18px;
+        --font-size-handmade-label: 16px;
+        --line-height-base: 1.6;
+    
+        --font-size-body-extra-small: 12px;
+        --font-size-body-small: 14px;
+        --font-size-body-base: 16px;
+        --font-size-body-large: 18px;
+        --font-size-body-extra-large: 21px;
+        --font-size-heading-display: 45px;
+        --font-size-heading-1: 30px;
+        --font-size-heading-2: 26px;
+        --font-size-heading-3: 23px;
+}

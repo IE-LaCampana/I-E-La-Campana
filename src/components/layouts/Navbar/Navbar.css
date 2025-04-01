@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 52%;
+    top: 0;
+    left: 47.8%;
+    
+}
+
+.navbar .navbar-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar .navbar-ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .navbar-ul li:nth-child(1),
+.navbar .navbar-ul li:nth-child(2),
+.navbar .navbar-ul li:nth-child(3),
+.navbar .navbar-ul li:nth-child(4),
+.navbar .navbar-ul li:nth-child(5) {
+    margin-bottom: 5px;
+}
+
+.navbar .navbar-ul li:nth-child(7)::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    height: 0;
+}
+
+.navbar .navbar-ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
