@@ -191,9 +191,8 @@
   display: flex !important;
   align-items: center;
   gap: 20px;
-  padding: 20px;
   background-color: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .event-image-placeholder {
   width: 50%;
@@ -328,7 +327,92 @@
 .play-pause-button:hover {
   background-color: #08590c;
 }
+@media (max-width: 1600px) { 
+  .news-events-container {
+    max-width: 1300px;
+    padding: 30px;
+  }
+  .section-title {
+    font-size: 2.1em;
+  }
+  .section-subtitle {
+    font-size: 20px;
+  }
+  .tab-button {
+    position: relative;
+    font-size: 22px;
+  }
+  .news-events-slick-dots {
+    margin: 59px;
+  }
 
+  .news-events-slick-dots li button {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  .news-events-custom-dot {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .events-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .event-slide {
+    gap: 20px;
+    padding: 0;
+  }
+  .event-details h3 {
+    font-size: 1.7rem;
+  }
+  .event-date {
+    font-size: 1rem;
+  }
+  .event-date .bi {
+    font-size: 18px;
+  }
+  .event-description {
+    font-size: 1rem;
+  }
+  .slick-arrow {
+    width: 43px;
+    height: 43px;
+  }
+  .slick-prev {
+    left: -60px !important;
+  }
+  .slick-next {
+    right: -60px !important;
+  }
+  .slick-prev .bi,
+  .slick-next .bi {
+    color: white;
+    font-size: 24px;
+  }
+  .ver-mas-button {
+    position: absolute;
+    left: 43%;
+    padding: 10px 16px;
+  }
+  .ver-mas-button .bi {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .play-pause-button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px 0 0 0;
+  }
+
+  .slick-dots li {
+    position: relative;
+    width: 12px;
+    height: 12px;
+  }
+
+}
 @media (max-width: 1440px) {
   .news-events-container {
     max-width: 1140px;
@@ -648,7 +732,7 @@
 @media (max-width: 480px) {
   .news-events-container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
   }
   .section-title {
@@ -656,48 +740,91 @@
   }
   .section-subtitle {
     font-size: 16px;
+    padding: 0 25px;
+    margin: 12px 10px;
+    line-height: 1.4;
+    text-align: start;
   }
   .tab-button {
-    font-size: 10px;
+    font-size: 12px;
+    margin: 0;
   }
   .news-events-slick-dots {
-    left: 17%;
+    left: 35%;
+    margin: 25px;
+    width: 160px;
+    
   }
   .news-events-custom-dot {
     width: 12px !important;
     height: 12px !important;
   }
   .events-container {
-    max-width: 500px;
+    max-width: 300px;
   }
   .event-slide {
     padding: 0px;
     margin: 0;
+    height: 100%;
+    background-color: transparent;
+  }
+  .event-image-placeholder{
+    overflow: hidden;
+    height: 210px;
+  }
+  .event-image-placeholder img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    --webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    image-rendering: --webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translate(0);
+  }
+  .event-details{
+    flex: 1;
   }
   .event-details h3 {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.5;
+
   }
   .event-date {
-    font-size: 16px;
+    font-size: 10px;
   }
   .event-date .bi {
     font-size: 14px;
   }
   .event-description {
-    font-size: 14px;
+    font-size: 10px;
+    display: -webkit-box;
+    --webkit-line-clamp: 3;
+    --webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;
+    position: relative;
+    margin-bottom: 0;
   }
   .slick-arrow {
     width: 30px;
     height: 30px;
   }
+  .slick-prev {
+    left: -30px !important;
+  }
+
+  .slick-next {
+    right: -30px !important;
+  }
   .slick-prev .bi,
   .slick-next .bi {
     font-size: 16px;
   }
-
   .ver-mas-button {
     position: absolute;
-    left: 25%;
+    left: 18%;
     font-size: 16px;
     line-height: 1.375;
     padding: 10px 16px;
@@ -706,7 +833,21 @@
     font-size: 18px;
   }
   .play-pause-button {
-    font-size: 16px;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .slick-dots li {
+    position: relative;
+    margin: 0;
+    right: 15%;
+  }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+  .event-image-placeholder img {
+    image-rendering: auto;
   }
 }
 
@@ -774,4 +915,27 @@
   .play-pause-button {
     font-size: 16px;
   }
+}
+
+@media (max-width: 1440px){
+  
+}
+@media (max-width: 1280px){
+
+}
+
+@media (max-width: 992px){
+  
+}
+
+@media (max-width: 768px){
+  
+}
+
+@media (max-width: 480px){
+  
+}
+
+@media (max-width: 320px){
+  
 }
