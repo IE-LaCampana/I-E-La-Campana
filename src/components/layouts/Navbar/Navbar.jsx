@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import ItemNavbar from "../../ul/ItemNavbar/ItemNavbar";
+import Logo from "../../../components/layouts/Logo/Logo";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdowns, setOpenDropdowns] = useState({});
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    document.body.style.overflow = !mobileMenuOpen ? "hidden" : "";
+  };
+
+  const toggleDropdown = (id) => {
+    setOpenDropdowns({
+      ...openDropdowns,
+      [id]: !openDropdowns[id],
+    });
+  };
+
   const sedesEducativasDropdown = [
-    { route: "/sede-principal", icon: "bi bi-buildings", content: "C.E. Principal", },
+    { route: "/sede-principal", icon: "bi bi-buildings", content: "I.E. Principal", },
     { route: "/sede-piendamo-arriba", icon: "bi bi-geo-alt-fill", content: "C.D. Piendamó Arriba", },
-    { route: "/sede-pueblito", icon: "bi bi-house-fill", content: "C.D.R.H. El Pueblito", },
-    { route: "/sede-tulcan", icon: "bi-house-door", content: "C.D.R.N. El Tulcán", },
+    { route: "/sede-pueblito", icon: "bi bi-house-fill", content: "C.D.R.M. Pueblito", },
+    { route: "/sede-tulcan", icon: "bi-house-door", content: "C.D.R.M. Tulcán", },
     { route: "/sede-santa-lucia", icon: "bi bi-tree", content: "E.R.M. Santa Lucía", },
     { route: "/sede-manantial", icon: "bi bi-water", content: "E.R.M. Manantial", },
     { route: "/sede-carmelo", icon: "bi bi-house-heart", content: "E.R.M. El Carmelo", },
@@ -28,10 +45,10 @@ const Navbar = () => {
     { route: "/cursos", icon: "bi bi-journal-bookmark", content: "Cursos y diplomas" },
   ];
 
-   const accesoDropdown = [
-     { route: "/login", icon: "bi bi-key", content: "Iniciar Sesión" },
-     { route: "/registro", icon: "bi bi-pencil-square", content: "Registrate" },
-   ];
+  const accesoDropdown = [
+    { route: "/login", icon: "bi bi-key", content: "Iniciar Sesión" },
+    { route: "/registro", icon: "bi bi-pencil-square", content: "Registrate" },
+  ];
 
   const vidaEstudiantilDropdown = [
     { route: "/actividades", icon: "bi bi-building", content: "Actividades Deportivas", },
@@ -66,21 +83,97 @@ const Navbar = () => {
     { route: "/encuentros", icon: "bi bi-people-fill", content: "Encuentros de Alumnos", },
   ];
 
+  const menuItems = [
+    { id: "inicio", route: "/", content: "INICIO" },
+    { id: "sedes", route: "/", content: "SEDES EDUCATIVAS", dropdown: sedesEducativasDropdown },
+    { id: "institucion", route: "/", content: "NUESTRA INSTITUCIÓN", dropdown: nuestraInstitucionDropdown },
+    { id: "programas", route: "/", content: "PROGRAMAS ACADEMICOS", dropdown: programasAcademicosDropdown },
+    { id: "ingresar", route: "/", content: "INGRESAR", dropdown: accesoDropdown },
+    { id: "vidad", route: "/", content: "VIDA ESTUDIANTIL", dropdown: vidaEstudiantilDropdown },
+    { id: "docentes", route: "/", content: "DOCENTES", dropdown: docentesDropdown },
+    { id: "estudiantes", route: "/", content: "ESTUDIANTES", dropdown: estudiantesDropdown },
+    { id: "proyectos", route: "/", content: "PROYECTOS", dropdown: proyectosDropdown },
+    {id: "egresados", route: "/", content: "EGRESADOS", dropdown: egresadosDropdown}
+    
+  ]
+
   return (
-    <nav className="navbar">
-      <ul className="navbar-ul">
-        <ItemNavbar route="/" content="INICIO" />
-        <ItemNavbar route="/" content="SEDES EDUCATIVAS" dropdownItemns={sedesEducativasDropdown} />
-        <ItemNavbar route="/" content="NUESTRA INSTITUCIÓN" dropdownItemns={nuestraInstitucionDropdown} />
-        <ItemNavbar route="/" content="PROGRAMAS ACADEMICOS" dropdownItemns={programasAcademicosDropdown} />
-        <ItemNavbar route="/" content="INGRESAR" dropdownItemns={accesoDropdown} />
-        <ItemNavbar route="/" content="VIDA ESTUDIANTIL" dropdownItemns={vidaEstudiantilDropdown} />
-        <ItemNavbar route="/" content="DOCENTES" dropdownItemns={docentesDropdown} />
-        <ItemNavbar route="/"content="ESTUDIANTES" dropdownItemns={estudiantesDropdown} />
-        <ItemNavbar route="/" content="PROYECTOS" dropdownItemns={proyectosDropdown}/>
-        <ItemNavbar route="/" content="EGRESADOS" dropdownItemns={egresadosDropdown} />
-      </ul>
-    </nav>
+    <>
+      <nav className="navbar">
+        <ul className="navbar-ul">
+          {menuItems.map((item) => (
+            <ItemNavbar
+              key={item.id}
+              route={item.route}
+              content={item.content}
+              dropdownItemns={item.dropdown}
+            />
+          ))}
+        </ul>
+      </nav>
+      <button className={`hamburger-menu ${mobileMenuOpen ? "hidden" : ""}`} onClick={toggleMobileMenu}>
+        <i className="bi bi-list"></i>
+      </button>
+      <div
+        className="mobile-overlay"
+        style={{ display: mobileMenuOpen ? "block" : "none" }}
+        onClick={toggleMobileMenu}
+      ></div>
+
+      <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
+        <button className="close-menu" onClick={toggleMobileMenu}>
+          <i className="bi bi-x-lg"></i>
+        </button>
+        <Logo />
+        <ul className="mobile-menu-list">
+          {menuItems.map((item) => (
+            <li key={item.id} className="mobile-menu-item">
+              {item.dropdown ? (
+                <>
+                  <button
+                    className="mobile-dropdown-toggle"
+                    onClick={() => toggleDropdown(item.id)}
+                  >
+                    {item.content}
+                    <i
+                      className={`bi bi-chevron-${
+                        openDropdowns[item.id] ? "up" : "down"
+                      }`}
+                    ></i>
+                  </button>
+                  <ul
+                    className={`mobile-dropdown-menu ${
+                      openDropdowns[item.id] ? "show" : ""
+                    }`}
+                  >
+                    {item.dropdown.map((subItem, index) => (
+                      <li key={index} className="mobile-dropdown-item">
+                        <NavLink
+                          to={subItem.route}
+                          className="mobile-dropdown-link"
+                          onClick={toggleMobileMenu}
+                        >
+                          <i className={subItem.icon}></i>
+                          <span>{subItem.content}</span>
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <NavLink
+                  to={item.route}
+                  className="mobile-menu-link"
+                  onClick={toggleMobileMenu}
+                >
+                  {item.content}
+                </NavLink>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 
