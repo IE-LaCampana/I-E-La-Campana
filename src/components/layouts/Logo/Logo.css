@@ -1,20 +1,79 @@
-@import '../../../styles/Varibles.css';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import "../../../styles/Varibles.css";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 .logo {
-    display: flex;
-    align-items: center;
-    height: 4.1rem;
-
+  display: flex;
+  align-items: center;
+  height: 4.1rem;
 }
-.logo img{
+.logo img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.logo h1 {
+  color: #e5e5e5;
+  font-size: 22px;
+  margin: 0 10px;
+  --theme-text-transform: uppercase;
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-heading-weight);
+}
+
+@media (max-width: 1600px){
+  .logo img {
     width: 3.5rem;
     height: 3.5rem;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
 }
-.logo h1{
-    color: #e5e5e5;
-    font-size: 22px;
-    margin: 0 10px;
-    --theme-text-transform: uppercase;
-    font-family: var(--font-montserrat);
-    font-weight: var(--font-heading-weight);
+
+@media (max-width: 1440px) {
+  .logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  .navbar .navbar-ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  .navbar .navbar-ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
 }

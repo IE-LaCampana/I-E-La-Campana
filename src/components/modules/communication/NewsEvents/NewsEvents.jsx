@@ -296,7 +296,7 @@ const NewsEvents = () => {
           <strong>CREAMOS</strong>FOTURO
         </h2>
         <p className="section-subtitle">
-          Ser parte de La Campaña es estar siempre informado sobre las novedades
+          Ser parte de la campana es estar siempre informado sobre las novedades
           de nuestra institución y comunidad educativa.
         </p>
       </div>

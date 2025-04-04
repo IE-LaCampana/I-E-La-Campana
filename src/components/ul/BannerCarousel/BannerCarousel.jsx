@@ -9,6 +9,7 @@ import "./BannerCarousel.css";
 
 import WelcomeImage from "../../../assets/banners/img-i-e-la-campana.jpeg";
 import MisakBand from "../../..//assets/banners/MisakBand.jpg";
+import KampanaTun from "../../..//assets/banners/Campanatun.png.jpeg";
 import PrescolarImage from "../../../assets/banners/Prescolar.jpg";
 import PrimeroImage from "../../../assets/banners/Primero.jpg";
 import SegundoImage from "../../../assets/banners/Segundo.jpg";
@@ -30,6 +31,7 @@ const BannerCarousel = () => {
   const slides = [
     { image: WelcomeImage, group: "Bienvenida" },
     { image: MisakBand, group: "Misak Band" },
+    { image: KampanaTun, group: "Kampanatun" },
     { image: PrescolarImage, group: "Prescolar" },
     { image: PrimeroImage, group: "1-1" },
     { image: SegundoImage, group: "2-1" },
@@ -100,6 +102,8 @@ const BannerCarousel = () => {
           <span>Aquí comienzan los grandes sueños</span>
         ) : slides[currentSlide].image === MisakBand ? (
           <span>Misak Band</span>
+        ) : slides[currentSlide].image === KampanaTun ? (
+          <span>Kampanatun</span>
         ) : (
           <span>
             Grupo <strong>{slides[currentSlide].group}</strong>

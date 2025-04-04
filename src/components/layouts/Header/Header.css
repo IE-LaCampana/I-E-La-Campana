@@ -1,8 +1,50 @@
-@import '../../../styles/Varibles.css';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import "../../../styles/Varibles.css";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 
-.header-app{
-    padding: 20px 40px;
-    background-color: #0c2c48;
-    
+.header-app {
+  padding: 20px 40px;
+  background-color: #081c2e;
 }
+
+@media (max-width: 1600px) {
+  .header-app {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header-app {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header-app {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header-app {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-app {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-app {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-app {
+    padding: 10px 30px;
+  }
+}
+

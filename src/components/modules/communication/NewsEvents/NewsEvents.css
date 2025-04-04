@@ -8,7 +8,7 @@
   margin-bottom: 30px;
 }
 .section-title strong {
-  color: #0c2c48;
+  color: #081c2e;
   margin-right: 10px;
   font-weight: 700;
 }
@@ -57,7 +57,7 @@
 }
 
 .tab-button-events {
-  color: #0c2c48;
+  color: #081c2e;
   font-weight: bold;
   display: block;
   text-transform: uppercase;
@@ -213,7 +213,7 @@
   width: 60%;
 }
 .event-details h3 {
-  color: #0c2c48;
+  color: #081c2e;
   margin-bottom: 10px;
   font-size: 1.6rem;
   line-height: 2.25rem;
@@ -249,8 +249,7 @@
   height: 100%;
 }
 .slick-arrow {
-  width: 50px;
-  height: 50px;
+  padding: 10;
   background-color: #308113 !important;
   border-radius: 8px;
   display: flex !important;
@@ -340,7 +339,7 @@
   }
   .tab-button {
     position: relative;
-    font-size: 22px;
+    font-size: 18px;
   }
   .news-events-slick-dots {
     margin: 59px;
@@ -486,17 +485,16 @@
 
 @media (max-width: 1280px) {
   .news-events-container {
-    max-width: 1140px;
     padding: 20px;
   }
   .section-title {
     font-size: 1.8em;
   }
   .section-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
   .tab-button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .news-events-slick-dots {
     margin: 59px;
@@ -523,7 +521,7 @@
     font-size: 1rem;
   }
   .event-date .bi {
-    font-size: 18px;
+    font-size: 1rem;
   }
   .event-description {
     font-size: 1rem;
@@ -555,7 +553,6 @@
 }
 @media (max-width: 1080px) {
   .news-events-container {
-    max-width: 1080px;
     padding: 20px 0;
     margin: 0;
   }
@@ -566,7 +563,7 @@
     font-size: 16px;
   }
   .tab-button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .news-events-slick-dots {
     margin: 59px 0;
@@ -581,24 +578,23 @@
     height: 14px !important;
   }
   .events-container {
-    max-width: 850px;
+    max-width: 800px;
   }
 
   .event-details h3 {
     font-size: 1.6rem;
   }
   .event-date {
-    font-size: 18px;
+    font-size: 16px;
   }
   .event-date .bi {
-    font-size: 25px;
+    font-size: 16px;
   }
   .event-description {
-    font-size: 18px;
+    font-size: 16px;
   }
   .slick-arrow {
-    width: 40px;
-    height: 40px;
+    padding: 10px;
   }
   .slick-prev {
     left: -60px !important;
@@ -618,12 +614,12 @@
   }
   .play-pause-button {
     font-size: 16px;
+    padding: 5px 10px;
   }
 }
 
 @media (max-width: 992px) {
   .news-events-container {
-    max-width: 920px;
     padding: 20px;
   }
   .section-title {
@@ -692,8 +688,7 @@
 
 @media (max-width: 768px) {
   .news-events-container {
-    max-width: 700px;
-    padding: 0;
+    padding: 20px 0;
   }
   .section-title {
     font-size: 24px;
@@ -707,7 +702,7 @@
   .news-events-content {
     width: 100%;
     position: relative;
-    max-width: 700px;
+    max-width: 770px;
   }
   .news-events-slick-dots {
     left: 5%;
@@ -784,7 +779,7 @@
   }
   .news-events-slick-dots {
     left: 35%;
-    margin: 40px;
+    margin: 35px;
     width: 160px;
   }
   .news-events-custom-dot {
@@ -839,8 +834,7 @@
     margin-bottom: 0;
   }
   .slick-arrow {
-    width: 30px;
-    height: 30px;
+    padding: 5px 10px;
   }
   .slick-prev {
     left: -30px !important;
@@ -859,13 +853,14 @@
     font-size: 16px;
     line-height: 1.375;
     padding: 10px 16px;
+    top: 599px;
   }
   .ver-mas-button .bi {
     font-size: 18px;
   }
   .play-pause-button {
     font-size: 12px;
-    padding: 10px;
+    padding: 5px 10px;
   }
   .slick-dots li {
     position: relative;
