@@ -166,9 +166,9 @@
 
 @media (max-width: 1600px) {
     .navbar {
-    width: 55%;
+    width: 54%;
     top: 1.5%;
-    left: 42.5%;
+    left: 45.5%;
   }
   .navbar .navbar-ul li a {
     font-size: 16px;
@@ -177,6 +177,7 @@
 
 @media (max-width: 1440px) {
   .navbar {
+    width: 53%;
     top: 1.5%;
     left: 46.8%;
   }

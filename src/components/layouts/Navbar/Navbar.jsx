@@ -27,7 +27,7 @@ const Navbar = () => {
     { route: "/sede-tulcan", icon: "bi-house-door", content: "C.D.R.M. Tulcán", },
     { route: "/sede-santa-lucia", icon: "bi bi-tree", content: "E.R.M. Santa Lucía", },
     { route: "/sede-manantial", icon: "bi bi-water", content: "E.R.M. Manantial", },
-    { route: "/sede-carmelo", icon: "bi bi-house-heart", content: "E.R.M. El Carmelo", },
+    { route: "/sede-carmelo", icon: "bi bi-house-heart", content: "E.M.M. Carmelo", },
   ];
 
   const nuestraInstitucionDropdown = [
@@ -41,7 +41,7 @@ const Navbar = () => {
     { route: "/prescolar", icon: "bi bi-emoji-smile", content: "Prescolar" },
     { route: "/primaria", icon: "bi bi-book", content: "Básica Primaria" },
     { route: "/segundaria", icon: "bi bi-journal-richtext", content: "Básica Secundaria", },
-    { route: "/media-tecnica", icon: "bi bi-mortarboard", content: "Media Técnica", },
+    { route: "/media-tecnica", icon: "bi bi-mortarboard", content: "Media Académica", },
     { route: "/cursos", icon: "bi bi-journal-bookmark", content: "Cursos y diplomas" },
   ];
 
@@ -54,7 +54,9 @@ const Navbar = () => {
     { route: "/actividades", icon: "bi bi-building", content: "Actividades Deportivas", },
     { route: "/biblioteca", icon: "bi bi-book-half", content: "Biblioteca" },
     { route: "/bienestar", icon: "bi bi-heart", content: "Bienestar Estudiantil", },
-    { route: "/proyectos-estudiantes", icon: "bi bi bi-tools", content: "Proyectos Estudiantiles", },
+    { route: "/alimentacion", icon: "bi bi-cup-straw", content: "Restaurante escolar" },
+    { route: "/tecnologia", icon: "bi bi-pc-display", content: "Sala de Sistemas" },
+    { route: "/laboratorio", icon: "bi bi-beake", content: "Laboratorio de Química" },
   ];
 
   const docentesDropdown = [
