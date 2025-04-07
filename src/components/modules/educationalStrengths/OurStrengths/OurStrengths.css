@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 90px 20px;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 .our-strengths-container .our-strengths-title {
   text-align: center;
@@ -228,7 +229,7 @@
   }
   .our-strengths-container .our-strengths-description {
     font-size: 1rem;
-    max-width: 420px;
+    max-width: 350px;
     line-height: 1.5;
   }
   .our-strengths-container .strengths-grid {

@@ -141,6 +141,7 @@
 .slick-dots li button::before {
   display: none;
 }
+
 @media (max-width: 1600px) {
   .banner-carousel {
     height: 600px;
@@ -187,6 +188,7 @@
     height: 15px !important;
   }
 }
+
 @media (max-width: 1440px) {
   .banner-carousel {
     height: 500px;
@@ -225,11 +227,12 @@
     width: 15px !important;
     height: 15px !important;
   }
-  .custom-dots-container{
+  .custom-dots-container {
     position: relative;
     left: 95px;
   }
 }
+
 @media (max-width: 1280px) {
   .banner-carousel {
     height: 500px;
@@ -268,11 +271,10 @@
     width: 15px !important;
     height: 15px !important;
   }
-  .custom-dots-container{
+  .custom-dots-container {
     position: relative;
     left: 95px;
   }
-  
 }
 
 @media (max-width: 1080px) {
@@ -313,11 +315,10 @@
     width: 15px !important;
     height: 15px !important;
   }
-  .custom-dots-container{
+  .custom-dots-container {
     position: relative;
     left: 95px;
   }
-  
 }
 
 @media (max-width: 992px) {
@@ -363,10 +364,10 @@
     height: 15px !important;
   }
 
-   .custom-dots-container {
+  .custom-dots-container {
     position: relative;
     left: 5%;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -412,10 +413,10 @@
     height: 12px !important;
   }
 
-   .custom-dots-container {
+  .custom-dots-container {
     position: relative;
     left: 5%;
-}
+  }
 }
 
 @media (max-width: 480px) {
@@ -462,7 +463,12 @@
   }
   .custom-dots-container {
     position: relative;
-    left: 24%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 3px 0;
   }
 }
 
