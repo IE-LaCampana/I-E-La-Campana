@@ -763,24 +763,22 @@
   .news-events-container {
     max-width: 500px;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 20px;
   }
   .section-title {
     font-size: 18px;
   }
   .section-subtitle {
     font-size: 16px;
-    line-height: 1.4;
-    padding: 0 17px;
+    line-height: 1.5;
   }
   .tab-button {
     font-size: 12px;
     margin: 0;
   }
   .news-events-slick-dots {
-    left: 35%;
-    margin: 35px;
-    width: 160px;
+    left: 24%;
+    margin: 38px 35px 0;
   }
   .news-events-custom-dot {
     width: 12px !important;
@@ -837,11 +835,11 @@
     padding: 5px 10px;
   }
   .slick-prev {
-    left: -30px !important;
+    left: -36px !important;
   }
 
   .slick-next {
-    right: -30px !important;
+    right: -36px !important;
   }
   .slick-prev .bi,
   .slick-next .bi {
@@ -853,7 +851,6 @@
     font-size: 16px;
     line-height: 1.375;
     padding: 10px 16px;
-    top: 599px;
   }
   .ver-mas-button .bi {
     font-size: 18px;

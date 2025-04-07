@@ -458,6 +458,11 @@
   .custom-dot {
     width: 12px !important;
     height: 12px !important;
+    margin: 0 1px;
+  }
+  .custom-dots-container {
+    position: relative;
+    left: 24%;
   }
 }
 
