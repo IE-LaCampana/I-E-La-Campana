@@ -455,6 +455,8 @@
   }
   .slick-dots {
     top: 89.8%;
+    max-width: 50%;
+    left: 52%;
   }
   .custom-dot {
     width: 12px !important;
