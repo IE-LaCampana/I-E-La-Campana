@@ -1,6 +1,7 @@
 import React from 'react'
 import BannerCarousel from '../../components/ul/BannerCarousel/BannerCarousel'
 import NewsEvents from '../../components/modules/communication/NewsEvents/NewsEvents';
+import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths'
 
 
 const Home = () => {
@@ -8,7 +9,8 @@ const Home = () => {
     <div className="Home-page">
       <main>
         <BannerCarousel />
-        <NewsEvents/>
+        <NewsEvents />
+        <OurStrengths />
       </main>
     </div>
   );
