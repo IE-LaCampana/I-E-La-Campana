@@ -293,7 +293,7 @@ const NewsEvents = () => {
     <div className="news-events-container">
       <div className="news-events">
         <h2 className="section-title">
-          <strong>CREAMOS</strong>FOTURO
+          <strong>CREAMOS</strong>FUTURO
         </h2>
         <p className="section-subtitle">
           Ser parte de la campana es estar siempre informado sobre las novedades

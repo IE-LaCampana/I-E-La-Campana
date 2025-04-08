@@ -1,7 +1,8 @@
 import React from 'react'
-import BannerCarousel from '../../components/ul/BannerCarousel/BannerCarousel'
+import BannerCarousel from '../../components/ul/BannerCarousel/BannerCarousel';
 import NewsEvents from '../../components/modules/communication/NewsEvents/NewsEvents';
-import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths'
+import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths';
+import MissionVisionValues from '../../components/modules/institutionalIdentity/MissionVisionValues/MissionVisionValues'
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
         <BannerCarousel />
         <NewsEvents />
         <OurStrengths />
+        <MissionVisionValues />
       </main>
     </div>
   );
