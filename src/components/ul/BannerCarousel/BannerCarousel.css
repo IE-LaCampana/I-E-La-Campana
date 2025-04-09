@@ -406,7 +406,8 @@
   }
   .slick-dots {
     top: 89.8%;
-    left: 8%;
+    max-width: 50%;
+    left: 52%;
   }
   .custom-dot {
     width: 12px !important;
@@ -415,7 +416,12 @@
 
   .custom-dots-container {
     position: relative;
-    left: 5%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 3px 0;
   }
 }
 
