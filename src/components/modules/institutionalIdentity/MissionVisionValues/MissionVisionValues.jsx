@@ -24,14 +24,14 @@ const MissionVisionValues = () => {
       <div className="mvv-mision-block">
         <h2 className="mvv-block-title">MISIÓN</h2>
         <p>
-          La institución Educativa la Campana con sedes en el Resguardo de
-          Guambia, Santa Lucia zona campesina y Tulcán Resguardo de toró
-          Municipio de Silvia, Departamento del Cauca titne como misión orientar
-          y educar a la niñez y la juventud en el saber escuchar - sentir, ver,
-          pensar y hacer, basada en la formación integral generando ambientes
-          escolares motivantes e incluyentes que le permita desarrollar procesos
-          de fortalecimiento de pervivencia en relación armónica con la
-          naturaleza.
+          La Institución Educativa La Campana, con sedes en el Resguardo de
+          Guambia, Santa Lucía (zona campesina) y Tulcán (Resguardo de Toró), en
+          el municipio de Silvia, departamento del Cauca, tiene como misión
+          orientar y educar a la niñez y juventud en el saber escuchar, sentir,
+          ver, pensar y hacer. Se basa en una formación integral, generando
+          ambientes escolares motivadores e inclusivos que permitan desarrollar
+          procesos de fortalecimiento de la pervivencia en relación armónica con
+          la naturaleza.
         </p>
         <div className="mvv-image-container">
           <img
@@ -44,11 +44,11 @@ const MissionVisionValues = () => {
       <div className="mvv-block">
         <h2 className="mvv-block-title">VISIÓN</h2>
         <p>
-          La institución Educativa La Campana, Se posicionará en el año 2022
-          como una institución lider en procesos educativos, sociales y
-          ambientales para la pervivencia cultural de la comunidad y la
-          materialización de los proyectos de vida de sus educados promoviendo
-          competividad y producida sostenible
+          La Institución Educativa La Campana se posicionará como una
+          institución líder en procesos educativos, sociales y ambientales,
+          promoviendo la pervivencia cultural de la comunidad y la
+          materialización de los proyectos de vida de sus educandos, fomentando
+          la competitividad y una producción sostenible.
         </p>
         <div className="mvv-image-container">
           <img
@@ -120,7 +120,7 @@ const MissionVisionValues = () => {
         </ul>
       </div>
       <div className="mvv-block">
-        <h2 className="mvv-block-title">¿COMO SON NUESTROS ALUMNOS?</h2>
+        <h2 className="mvv-block-title">¿CÓMO SON NUESTROS ALUMNOS?</h2>
         <p className="mvv-video-description">
           Nuestros alumnos son el reflejo de nuestros valores y filosofía
           educativa. Aprende más sobre cómo formamos jóvenes comprometidos,

@@ -32,7 +32,7 @@ const BannerCarousel = () => {
     { image: WelcomeImage, group: "Bienvenida" },
     { image: MisakBand, group: "Misak Band" },
     { image: KampanaTun, group: "Kampanatun" },
-    { image: PrescolarImage, group: "Prescolar" },
+    { image: PrescolarImage, group: "Transición" },
     { image: PrimeroImage, group: "1-1" },
     { image: SegundoImage, group: "2-1" },
     { image: TerceroImage, group: "3-1" },
