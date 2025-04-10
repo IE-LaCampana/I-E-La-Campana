@@ -92,7 +92,7 @@ const NewsEvents = () => {
       title: "Día del Estudiante",
       date: "2025-06-06",
       description:
-        "El Día del Estudiante reconoce el esfuerzo y dedicación de los estudiantes en su formación académica. Se organizan encuentros, charlas motivacionales y eventos deportivos para incentivar la excelencia académica y el liderazgo estudiantil dentro de la comunidad educativa..",
+        "El Día del Estudiante reconoce el esfuerzo y dedicación de los estudiantes en su formación académica. Se organizan encuentros, charlas motivacionales y eventos deportivos para incentivar la excelencia académica y el liderazgo estudiantil dentro de la comunidad educativa.",
       image: DiaDelEstudiante,
     },
     {
@@ -100,15 +100,15 @@ const NewsEvents = () => {
       title: "Día de la Bandera Misak",
       date: "2025-06-28",
       description:
-        "Ceremonia especial para rendir homenaje a la bandera nacional con izadas, discursos patrióticos y reflexiones sobre la importacia de los símbolos patricios. Se reforzarán los valores de la entidad y pertenecia cultural en toda la comunidad educativa.",
+        "Ceremonia especial para rendir homenaje a la bandera nacional con izadas, discursos patrióticos y reflexiones sobre la importancia de los símbolos patrios. Se reforzarán los valores de la identidad y pertenencia cultural en toda la comunidad educativa.",
       image: DiaBandera,
     },
     {
       id: 10,
-      title: "Día de la tierra",
+      title: "Día de la Tierra",
       date: "2025-07-19",
       description:
-        "Jornada de reflexion sobre el respeto y la conservación de la tierra con actividades ambientales, plantación de árboles y exposiciones sobre la historia y el significado de de la recuperación de tierras ancestrales.",
+        "Jornada de reflexión sobre el respeto y la conservación de la Tierra con actividades ambientales, plantación de árboles y exposiciones sobre la historia y el significado de la recuperación de tierras ancestrales.",
       image: DiaTierra,
     },
     {
@@ -124,7 +124,7 @@ const NewsEvents = () => {
       title: "Día de la Mujer Indígena",
       date: "2025-09-05",
       description:
-        "Celebración de honor a la mujer indíjena con encuentros, foros y muestras culturales que resaltan su importancia en la comunidad. Se compartirán experiencias y conocimientos sobre el rol de la mujer en la preservación de la tradición y la cultura indígena.",
+        "Celebración en honor a la mujer indígena con encuentros, foros y muestras culturales que resaltan su importancia en la comunidad. Se compartirán experiencias y conocimientos sobre el rol de la mujer en la preservación de la tradición y la cultura indígena.",
       image: MujerIndigena,
     },
     {
@@ -137,18 +137,18 @@ const NewsEvents = () => {
     },
     {
       id: 14,
-      title: "Día Internacional de los Derechos de los Pueblos Indigenas",
+      title: "Día Internacional de los Derechos de los Pueblos Indígenas",
       date: "2025-11-06",
       description:
-        "Jornada de sensibilización y reflexión sobre los derechos de los peublos indpigenas con charlas, exposiciones y foros de discusión. Se promoverá el respeto, la incluision y la valoración de la diversidad cultural en la sociendad.",
+        "Jornada de sensibilización y reflexión sobre los derechos de los pueblos indígenas con charlas, exposiciones y foros de discusión. Se promoverá el respeto, la inclusión y la valoración de la diversidad cultural en la sociedad.",
       image: DiaInternacionalPueblosMisak,
     },
     {
       id: 15,
-      title: "Posesión del cabildo estudiantil",
+      title: "Posesión del Cabildo Estudiantil",
       date: "2025-03-14",
       description:
-        "Con gran entusiasmo y sentido de responsabilidad, los estudiantes de la Institución Educativa La Campana, tomaron posesión de sus cargos como miembros del Cabildo Estudiantil. La ceremonia, se llevó a cabo en el aula multiple del colegio, contó con la presencia de la autoridad máxima del resguardo de Guambía, directivos, docentes y la comunidad estudiantil en general.",
+        "Con gran entusiasmo y sentido de responsabilidad, los estudiantes de la Institución Educativa La Campana tomaron posesión de sus cargos como miembros del Cabildo Estudiantil. La ceremonia, que se llevó a cabo en el aula múltiple del colegio, contó con la presencia de la autoridad máxima del resguardo de Guambía, directivos, docentes y la comunidad estudiantil en general.",
       image: PosesionCabildoEstudiantil,
     },
     {

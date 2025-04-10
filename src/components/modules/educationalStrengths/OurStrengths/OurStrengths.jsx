@@ -8,7 +8,7 @@ import FortalezasArtistico from "../../../../assets/backgrounds/fortalezas-artis
 import FortalezasValores from "../../../../assets/backgrounds/fortalezas-valores.png";
 import FortalezasBullying from "../../../../assets/backgrounds/fortalezas-bullying.png";
 import FortalezasLectura from "../../../../assets/backgrounds/fortalezas-lectura.png";
-import FortalezasDebate from "../../../../assets/backgrounds/fortalezas-debate.png";
+import IdentidadCulturalMisak from "../../../../assets/backgrounds/Identidad-cultural-misak.png";
 import "./OurStrengths.css";
 
 const OurStrengths = () => {
@@ -20,12 +20,12 @@ const OurStrengths = () => {
     },
     {
       id: 2,
-      title: "Educació 3.0",
+      title: "Educación 3.0",
       image: FortalezasTecnologia,
     },
     {
       id: 3,
-      title: "Aprendizaje cooporativo",
+      title: "Aprendizaje cooperativo",
       image: FortalezasCooperativo,
     },
     {
@@ -50,7 +50,7 @@ const OurStrengths = () => {
     },
     {
       id: 8,
-      title: "No al bullyng",
+      title: "No al bullying",
       image: FortalezasBullying,
     },
     {
@@ -60,8 +60,8 @@ const OurStrengths = () => {
     },
     {
       id: 10,
-      title: "Oratorio",
-      image: FortalezasDebate,
+      title: "Identidad cultural Misak",
+      image: IdentidadCulturalMisak,
     },
   ];
 
@@ -76,7 +76,7 @@ const OurStrengths = () => {
         en sí mismos sus fortalezas y enseñándoles a gestionar los retos del
         futuro. Para ello trabajamos desde la ilusión, fomentando la cultura del
         trabajo, potenciando el dominio de los idiomas e inculcándoles una
-        educación en valores que contribuya tanto a su desarrollo humano, como
+        educación en valores que contribuya tanto a su desarrollo humano como
         profesional.
       </p>
       <div className="strengths-grid">
