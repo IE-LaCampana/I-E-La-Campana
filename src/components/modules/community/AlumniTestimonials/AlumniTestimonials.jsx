@@ -12,58 +12,59 @@ const AlumniTestimonials = () => {
       image: Testimonios,
       name: "Nicolás Ortiz",
       description:
-        "La Campana marcó mi vida profesional. El rigor académico y el apoyo docente me brindaron una base sólida. Aprendí conocimientos y valores que aplico día a día en mi consulta médica. Estoy agradecido por la inspiración de mis profesores y su compromiso.",
+        "La Institución Educativa La Campana marcó profundamente mi formación. El compromiso académico y la calidad humana del cuerpo docente me brindaron bases sólidas. Los valores y conocimientos adquiridos continúan guiando mi ejercicio médico.",
     },
     {
       id: 2,
       image: Testimonios,
       name: "Antonia Agaud",
       description:
-        "Gracias a La Campana aprendí a pensar críticamente. Esta habilidad ha sido esencial en mi carrera de Derecho. La disciplina, los debates y el trabajo en grupo me prepararon para la universidad y fortalecieron mi capacidad argumentativa en cada caso.",
+        "Gracias a la Institución Educativa La Campana desarrollé pensamiento crítico, herramienta clave en mi carrera en Derecho. La exigencia académica, los espacios de debate y el trabajo en equipo fortalecieron mis capacidades argumentativas.",
     },
     {
       id: 3,
       image: Testimonios,
       name: "Marco Sepúlveda",
       description:
-        "En La Campana nació mi pasión por la ingeniería. Los desafíos prácticos, el enfoque científico y el compromiso docente me dieron herramientas sólidas. La ética y el pensamiento lógico que aprendí siguen guiando mi labor profesional tras más de 15 años.",
+        "En la Institución Educativa La Campana nació mi vocación por la ingeniería. El enfoque científico, los retos prácticos y la guía constante de los docentes me ofrecieron herramientas valiosas que aún hoy aplico en mi trayectoria profesional.",
     },
     {
       id: 4,
       image: Testimonios,
       name: "Valentina Morales",
       description:
-        "La Campana despertó mi vocación científica. El enfoque integral, la motivación docente y el club de ciencias me impulsaron hacia la investigación biomédica. Allí desarrollé también habilidades sociales clave que hoy aplico en mi carrera profesional.",
+        "La Institución Educativa La Campana despertó mi pasión por la ciencia. Gracias al club de ciencias, la motivación de los docentes y el enfoque integral, descubrí mi camino hacia la investigación biomédica y el trabajo colaborativo.",
     },
     {
       id: 5,
       image: Testimonios,
       name: "Javier Fuentes",
       description:
-        "La Campana unió creatividad y técnica, esenciales en mi carrera de arquitectura. El arte, la ciencia y el respeto por el entorno fueron pilares en mi formación. Valoro profundamente a quienes guiaron mi visión profesional con tanta dedicación.",
+        "La formación que recibí en la Institución Educativa La Campana integró arte y técnica, fundamentales en mi carrera como arquitecto. Valoro la visión humanista y ambiental que me fue transmitida con dedicación y profesionalismo.",
     },
     {
       id: 6,
       image: Testimonios,
       name: "Carolina Vásquez",
       description:
-        "El espíritu emprendedor que desarrollé en La Campana definió mi camino. Aprendí sobre liderazgo, trabajo en equipo y responsabilidad. Las experiencias en el centro de alumnos y los proyectos formativos fueron clave en mi desarrollo profesional.",
+        "El espíritu emprendedor que cultivé en la Institución Educativa La Campana fue determinante. Las experiencias de liderazgo, trabajo en equipo y responsabilidad social fueron clave en mi desarrollo como profesional comprometida.",
     },
     {
       id: 7,
       image: Testimonios,
       name: "Rodrigo Mendoza",
       description:
-        "La pasión por la historia nació en La Campana. Los docentes me enseñaron a comprender el pasado con sentido crítico. Esta formación humanista marcó mi vocación docente. Hoy enseño con la misma dedicación y respeto que un día me inspiraron.",
+        "Mi vocación por la historia se forjó en la Institución Educativa La Campana. Los docentes me enseñaron a analizar el pasado con sentido crítico. Hoy ejerzo la docencia inspirado por la misma entrega que recibí como estudiante.",
     },
     {
       id: 8,
       image: Testimonios,
       name: "Daniela Soto",
       description:
-        "La Campana me acercó al periodismo mediante el debate y el periódico escolar. Aprendí a investigar y comunicar con responsabilidad. La formación ética y el respeto a la diversidad de opiniones siguen guiando mi labor como periodista cada día.",
+        "En la Institución Educativa La Campana descubrí el periodismo a través del periódico escolar. Aprendí a comunicar con ética y rigor. La formación integral que recibí sigue siendo la base de mi ejercicio profesional como periodista.",
     },
   ];
+
 
   const [isPlaying, setIsPlaying] = useState(true);
   const sliderRef = useRef(null);
