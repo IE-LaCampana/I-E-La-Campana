@@ -453,7 +453,7 @@
   }
 
   .testimonials-ver-mas {
-    font-size: ;
+    font-size: 16px;
   }
 }
 
@@ -519,7 +519,7 @@
 
 @media (max-width: 480px) {
     .testimonials-container {
-    max-width: 380px;
+    max-width: 300px;
   }
   .testimonials-title {
     font-size: 16px;
