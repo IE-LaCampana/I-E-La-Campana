@@ -4,7 +4,8 @@ import NewsEvents from '../../components/modules/communication/NewsEvents/NewsEv
 import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths';
 import MissionVisionValues from '../../components/modules/institutionalIdentity/MissionVisionValues/MissionVisionValues';
 import AcademicStatistics from '../../components/modules/academic/AcademicStatistics/AcademicStatistics';
-import Testimonials from "../../components/modules/community/testimonials/testimonials";
+import AlumniTestimonials from "../../components/modules/community/AlumniTestimonials/AlumniTestimonials";
+
 
 
 
@@ -17,7 +18,7 @@ const Home = () => {
         <OurStrengths />
         <MissionVisionValues />
         <AcademicStatistics />
-        <Testimonials />
+        <AlumniTestimonials />
       </main>
     </div>
   );
