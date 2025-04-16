@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonials.css";
 
-  const Testimonials = () => {
-  const testimonials = [
+  const testimonials = () => {
+  const exTestimonials = [
     {
       id: 1,
       image: Testimonios,
@@ -171,7 +171,7 @@ import "./Testimonials.css";
           </p>
           <div className="testimonials-carousel">
             <Slider ref={sliderRef} {...sliderSettings}>
-              {testimonials.map((testimonial, index) => (
+              {exTestimonials.map((testimonial, index) => (
                 <div key={index} className="testimonial-slide">
                   <div className="testimonial-card">
                     <div className="testimonial-avatar">
@@ -213,4 +213,4 @@ import "./Testimonials.css";
     );
 };
 
-export default Testimonials;
+export default testimonials;
