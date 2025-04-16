@@ -349,9 +349,11 @@ const NewsEvents = () => {
                 </>
               )}
             </button>
-            <button className="ver-mas-button">
-              <i className="bi bi-eye me-2"></i>Ver Más Noticias
-            </button>
+            <div className="news-events-ver-mas-button">
+              <button className="ver-mas-button">
+                <i className="bi bi-eye me-2"></i>Ver Más Noticias
+              </button>
+            </div>
           </div>
         ) : (
           <div className="events-container">

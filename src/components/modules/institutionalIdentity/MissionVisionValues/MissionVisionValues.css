@@ -1,7 +1,7 @@
 .mvv-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 }
 .mvv-container .mvv-header {
   text-align: center;
@@ -93,7 +93,7 @@
     max-width: 1300px;
   }
   .mvv-container .mvv-title {
-    font-size: 24px;
+    font-size: 1.8em;
   }
   .mvv-introduction .subtitle-mision-vision-valore {
     max-width: 1300px;
@@ -104,7 +104,7 @@
     max-width: 1300px;
   }
   .mvv-block-title {
-    font-size: 24px;
+    font-size: 1.8em;
   }
   .mvv-values-block .mvv-block-title {
     line-height: 1.6;

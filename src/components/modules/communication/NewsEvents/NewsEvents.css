@@ -281,9 +281,13 @@
   font-size: 24px;
 }
 
+.news-events-ver-mas-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ver-mas-button {
-  position: absolute;
-  left: 50%;
   margin: 30px 0;
   background-color: #308113;
   color: white;
@@ -332,10 +336,10 @@
     padding: 30px;
   }
   .section-title {
-    font-size: 2.1em;
+    font-size: 1.8em;
   }
   .section-subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
   .tab-button {
     position: relative;
@@ -391,8 +395,6 @@
     font-size: 24px;
   }
   .ver-mas-button {
-    position: absolute;
-    left: 43%;
     padding: 10px 16px;
   }
   .ver-mas-button .bi {
@@ -488,7 +490,7 @@
     padding: 20px;
   }
   .section-title {
-    font-size: 1.8em;
+    font-size: 24px;
   }
   .section-subtitle {
     font-size: 16px;
@@ -557,7 +559,7 @@
     margin: 0;
   }
   .section-title {
-    font-size: 1.8em;
+    font-size: 24px;
   }
   .section-subtitle {
     font-size: 16px;
@@ -722,13 +724,25 @@
     font-size: 20px;
   }
   .event-date {
-    font-size: 16px;
+    font-size: 14px;
   }
   .event-date .bi {
     font-size: 16px;
   }
   .event-description {
-    font-size: 16px;
+    font-size: 12px;
+    overflow: auto;
+    padding-right: 8px;
+    max-height: 120px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .event-description::-webkit-scrollbar{
+    width: 4px;
+  }
+  .event-description::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
   .slick-arrow {
     width: 35px;
@@ -747,8 +761,7 @@
     font-size: 16px;
   }
   .ver-mas-button {
-    position: absolute;
-    left: 38%;
+    font-size: 16px;
   }
   .ver-mas-button .bi {
     font-size: 18px;
@@ -761,9 +774,9 @@
 
 @media (max-width: 480px) {
   .news-events-container {
-    max-width: 500px;
-    margin: 0;
-    padding: 20px 20px;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
   .section-title {
     font-size: 18px;
@@ -821,15 +834,19 @@
     font-size: 14px;
   }
   .event-description {
-    font-size: 10px;
-    display: -webkit-box;
-    --webkit-line-clamp: 3;
-    --webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 12px;
+    overflow: auto;
+    padding-right: 8px;
     max-height: 100px;
     position: relative;
     margin-bottom: 0;
+  }
+  .event-description::-webkit-scrollbar{
+    width: 4px;
+  }
+  .event-description::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
   .slick-arrow {
     padding: 5px 10px;
@@ -837,7 +854,6 @@
   .slick-prev {
     left: -36px !important;
   }
-
   .slick-next {
     right: -36px !important;
   }
@@ -846,8 +862,6 @@
     font-size: 16px;
   }
   .ver-mas-button {
-    position: absolute;
-    left: 18%;
     font-size: 16px;
     line-height: 1.375;
     padding: 10px 16px;
@@ -924,8 +938,6 @@
     font-size: 16px;
   }
   .ver-mas-button {
-    position: absolute;
-    left: 25%;
     font-size: 16px;
     line-height: 1.375;
     padding: 10px 16px;
