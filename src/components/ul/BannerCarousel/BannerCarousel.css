@@ -311,6 +311,11 @@
   .welcome-text p {
     font-size: 16px;
   }
+  .slick-dots {
+    top: 89.8%;
+    max-width: 50%;
+    left: 40%;
+  }
   .custom-dot {
     width: 15px !important;
     height: 15px !important;

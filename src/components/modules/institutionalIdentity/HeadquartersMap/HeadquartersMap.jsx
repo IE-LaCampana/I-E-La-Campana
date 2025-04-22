@@ -36,7 +36,7 @@ const HeadquartersMap = () => {
       description: "Centro Docente Rural Mixto Tulcán.",
       coordinates: "4.615000, -74.080000",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040862.8525542703!2d-77.3588508342722!3d2.4870075488474903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3efb003183b29d%3A0xc0a6c2bbd60ba6bf!2sEscuela%20Rural%20Tulcan!5e0!3m2!1ses-419!2sco!4v1745107176458!5m2!1ses-419!2sco",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.680326243633!2d-76.33689562212155!3d2.532973556421638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3aafb5b2e524d5%3A0x19f2570e174c9396!2sEscuela%20Tulcan!5e0!3m2!1ses-419!2sco!4v1745268474330!5m2!1ses-419!2sco",
     },
     {
       id: 5,
@@ -44,7 +44,7 @@ const HeadquartersMap = () => {
       description: "Escuela Rural Mixta Santa Lucía.",
       coordinates: "4.610000, -74.075000",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.8610051241126!2d-76.29790868960096!3d2.552097697415465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3aa53b5ef09db9%3A0x58aba18720205a3f!2sEscuela%20Rural%20mixta%20Santa%20lucia!5e0!3m2!1ses-419!2sco!4v1745245524973!5m2!1ses-419!2sco",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.8610051241126!2d-76.29790868960096!3d2.552097697415465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3aa53b5ef09db9%3A0x58aba18720205a3f!2sEscuela%20Rural%20mixta%20Santa%20lucia!5e0!3m2!1ses-419!2sco!4v1745268110081!5m2!1ses-419!2sco",
     },
     {
       id: 6,
