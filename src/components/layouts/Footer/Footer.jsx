@@ -9,14 +9,14 @@ const Footer = () => {
           <h2>CONÉCTATE CON NOSOTROS</h2>
           <ul>
             <li>
-              <i className="bi bi-telephone"></i>Teléfono: +57 XXXXXXXXXX
+              <i className="bi bi-telephone"></i>+57 XXXXXXXXXX
             </li>
             <li>
-              <i className="bi bi-envelope"></i>Correo Electrónico:
-              contacto@la-campana.edu.co
+              <i className="bi bi-envelope"></i>
+              ielacampana@gmail.com
             </li>
             <li>
-              <i className="bi bi-geo-alt"></i>Ubicación: Vereda La Campana, Resguardo de Guambia
+              <i className="bi bi-geo-alt"></i>Vereda La Campana, Resguardo de Guambia
               Municipio de Silvia, Departamento del Cauca, Colombia.
             </li>
             <li>
