@@ -6,6 +6,7 @@ import MissionVisionValues from '../../components/modules/institutionalIdentity/
 import AcademicStatistics from '../../components/modules/academic/AcademicStatistics/AcademicStatistics';
 import AlumniTestimonials from "../../components/modules/community/AlumniTestimonials/AlumniTestimonials";
 import HeadquartersMap from "../../components/modules/institutionalIdentity/HeadquartersMap/HeadquartersMap";
+import Footer from  "../../components/layouts/Footer/Footer"
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
         <AcademicStatistics />
         <AlumniTestimonials />
         <HeadquartersMap />
+        <Footer />
       </main>
     </div>
   );

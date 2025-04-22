@@ -139,7 +139,7 @@
 
 @media (max-width: 1600px) {
   .headquarters-container {
-    max-width: 1350px;
+    max-width: 1300px;
   }
 
   .headquarters-container .headquarters-title {
@@ -219,6 +219,29 @@
     padding: 0.8rem 1.5rem;
   }
 }
+
+@media (max-width: 1080px) {
+  .headquarters-container {
+    max-width: 900px;
+  }
+
+  .headquarters-container .headquarters-title {
+    font-size: 1.8em;
+  }
+
+  .headquarters-container .headquarters-description {
+    font-size: 16px;
+  }
+
+  .headquarters-item .headquarters-name {
+    font-size: 1.8em;
+  }
+
+  .headquarters-tabs .tabs-button {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
 
 @media (max-width: 992px) {
   .headquarters-container {
@@ -326,3 +349,4 @@
     padding: 5px 10px;
   }
 }
+
