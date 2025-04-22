@@ -20,7 +20,7 @@ const Navbar = () => {
     });
   };
 
-  const sedesEducativasDropdown = [
+  const educationalCentersDropdown = [
     { route: "/sede-principal", icon: "bi bi-buildings", content: "I.E. Principal", },
     { route: "/sede-piendamo-arriba", icon: "bi bi-geo-alt-fill", content: "C.D. Piendamó Arriba", },
     { route: "/sede-pueblito", icon: "bi bi-house-fill", content: "C.D.R.M. Pueblito", },
@@ -30,72 +30,68 @@ const Navbar = () => {
     { route: "/sede-carmelo", icon: "bi bi-house-heart", content: "E.M.M. Carmelo", },
   ];
 
-  const nuestraInstitucionDropdown = [
+  const ourInstitutionDropdown = [
     { route: "/quienes-somos", icon: "bi bi-info-circle", content: "Quienes Somos", },
     { route: "/nuestro-equipo", icon: "bi bi-building", content: "Nuestro Equipo", },
     { route: "/logros", icon: "bi bi-people", content: "Reconocimientos" },
     { route: "/jornada-unica", icon: "bi bi-clock-history", content: "Jornada Única", },
+    { route: "/asociacion-padres", icon: "bi bi-people-fill", content: "Asociación de Padres" }, 
+    { route: "/inscripciones", icon: "bi bi-pencil-square", content: "Inscripciones" }
+
   ];
 
-  const programasAcademicosDropdown = [
+  const academicProgramsDropdown = [
     { route: "/prescolar", icon: "bi bi-emoji-smile", content: "Prescolar" },
     { route: "/primaria", icon: "bi bi-book", content: "Básica Primaria" },
     { route: "/segundaria", icon: "bi bi-journal-richtext", content: "Básica Secundaria", },
     { route: "/media-tecnica", icon: "bi bi-mortarboard", content: "Media Académica", },
-    { route: "/cursos", icon: "bi bi-journal-bookmark", content: "Cursos y diplomas" },
+    { route: "/cursos", icon: "bi bi-journal-bookmark", content: "Cursos y Diploma" },
+    { route: "/calendario", icon: "bi bi-calendar-week", content: "Calendario Académico" },
   ];
 
-  const accesoDropdown = [
+  const accessDropdown = [
     { route: "/login", icon: "bi bi-key", content: "Iniciar Sesión" },
     { route: "/registro", icon: "bi bi-pencil-square", content: "Registrate" },
   ];
 
-  const vidaEstudiantilDropdown = [
+  const studentLifeDropdown = [
     { route: "/actividades", icon: "bi bi-building", content: "Actividades Deportivas", },
     { route: "/biblioteca", icon: "bi bi-book-half", content: "Biblioteca" },
     { route: "/bienestar", icon: "bi bi-heart", content: "Bienestar Estudiantil", },
-    { route: "/alimentacion", icon: "bi bi-cup-straw", content: "Restaurante escolar" },
+    { route: "/alimentacion", icon: "bi bi-cup-straw", content: "Restaurante Escolar" },
     { route: "/tecnologia", icon: "bi bi-pc-display", content: "Sala de Sistemas" },
-    { route: "/laboratorio", icon: "bi bi-beake", content: "Laboratorio de Química" },
+    { route: "/laboratorio", icon: "bi bi-thermometer", content: "Laboratorio de Química" },
   ];
 
-  const docentesDropdown = [
-    { route: "/tareas", icon: "bi bi-pin", content: "Publicación de Tareas" },
-    { route: "/notas", icon: "bi bi-graph-up", content: "Registro de notas" },
-    { route: "/material", icon: "bi bi-folder", content: "Material de Apoyo" },
-    { route: "/comunicados", icon: "bi bi-megaphone", content: "Comunicados" },
+  const environmentalDropdown = [
+    { route: "/programas-ecológicos", icon: "bi bi-pin", content: "Programas Ecológicos" },
+    { route: "/huertas-escolares", icon: "bi bi-graph-up", content: "Huertas Escolares" },
+    { route: "/reciclaje-reducción", icon: "bi bi-folder", content: "Reciclaje y Reducción" },
+    { route: "/abonos-orgánicos", icon: "bi bi-megaphone", content: "Abonos Orgánicos" },
   ];
 
-  const estudiantesDropdown = [
-    { route: "/mis-tareas", icon: "bi bi-folder2", content: "Mis Tareas" },
-    { route: "/mis-calificaciones", icon: "bi bi-bar-chart", content: "Mis Calificaciones", },
-    { route: "/calendario", icon: "bi bi-calendar-week", content: "Calendario Académico", },
-    { route: "/foro", icon: "bi bi-chat-dots", content: "Foro Estudiantil" },
-  ];
-
-  const proyectosDropdown = [
+  const projectsDropdown = [
     { route: "/prae", icon: "bi bi-tree", content: "PRAE" },
     { route: "/yatul", icon: "bi bi-house-door", content: "Yatul" },
     { route: "/artes", icon: "bi bi-palette", content: "Artes" },
     { route: "/plantas-edicinales", icon: "bi bi-flower1", content: "Plantas Medicinales", },
   ];
 
-  const egresadosDropdown = [
+  const alumniDropdown = [
     { route: "/testimonios", icon: "bi bi-chat-quote", content: "Testimonios" },
     { route: "/encuentros", icon: "bi bi-people-fill", content: "Encuentros de Alumnos", },
   ];
 
   const menuItems = [
     { id: "inicio", route: "/", content: "INICIO" },
-    { id: "sedes", route: "/", content: "SEDES EDUCATIVAS", dropdown: sedesEducativasDropdown },
-    { id: "institucion", route: "/", content: "NUESTRA INSTITUCIÓN", dropdown: nuestraInstitucionDropdown },
-    { id: "programas", route: "/", content: "PROGRAMAS ACADEMICOS", dropdown: programasAcademicosDropdown },
-    { id: "ingresar", route: "/", content: "INGRESAR", dropdown: accesoDropdown },
-    { id: "vidad", route: "/", content: "VIDA ESTUDIANTIL", dropdown: vidaEstudiantilDropdown },
-    { id: "docentes", route: "/", content: "DOCENTES", dropdown: docentesDropdown },
-    { id: "estudiantes", route: "/", content: "ESTUDIANTES", dropdown: estudiantesDropdown },
-    { id: "proyectos", route: "/", content: "PROYECTOS", dropdown: proyectosDropdown },
-    {id: "egresados", route: "/", content: "EGRESADOS", dropdown: egresadosDropdown}
+    { id: "sedes", route: "/", content: "SEDES EDUCATIVAS", dropdown: educationalCentersDropdown },
+    { id: "institucion", route: "/", content: "NUESTRA INSTITUCIÓN", dropdown: ourInstitutionDropdown },
+    { id: "programas", route: "/", content: "PROGRAMAS ACADEMICOS", dropdown: academicProgramsDropdown },
+    { id: "ingresar", route: "/", content: "INGRESAR", dropdown: accessDropdown },
+    { id: "vidad", route: "/", content: "VIDA ESTUDIANTIL", dropdown: studentLifeDropdown },
+    { id: "ambiente", route: "/", content: "MEDIO AMBIENTE", dropdown: environmentalDropdown  },
+    { id: "proyectos", route: "/", content: "PROYECTOS", dropdown: projectsDropdown },
+    {id: "egresados", route: "/", content: "EGRESADOS", dropdown: alumniDropdown}
     
   ]
 
