@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate, Navigate } from 'react-router-dom';
-import { Img } from "react-image";
 import "./NewsEventDetail.css";
 
 import {events, news} from "../../../../../data/newsEventsData"
@@ -54,12 +53,9 @@ const NewsEventDetail = () => {
       </div>
       <div className="detail-content">
         <div className="detail-image">
-          <Img
-            src={item.image}
-            alt={item.title}
-            loader={<div className="loading">Cargando imagen...</div>}
-            unloader={<div className="error">No se pudo cargar la imagen.</div>}
-          />
+          <div className="detail-image">
+            <img src={item.image} alt={item.title} />
+          </div>
         </div>
         <div className="detail-metadata-container">
           <h2>{item.title}</h2>
