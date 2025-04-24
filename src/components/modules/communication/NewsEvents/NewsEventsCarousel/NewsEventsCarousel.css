@@ -302,6 +302,7 @@
   justify-content: center;
   align-items: center;
   border: none;
+  text-decoration: none;
 }
 
 .ver-mas-button .bi {
@@ -327,9 +328,12 @@
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
 }
+
 .play-pause-button:hover {
   background-color: #08590c;
 }
+
+
 @media (max-width: 1600px) {
   .news-events-container {
     max-width: 1300px;

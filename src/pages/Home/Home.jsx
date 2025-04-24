@@ -1,6 +1,6 @@
 import React from 'react'
 import BannerCarousel from '../../components/ul/BannerCarousel/BannerCarousel';
-import NewsEvents from '../../components/modules/communication/NewsEvents/NewsEvents';
+import NewsEventsCarousel from "../../components/modules/communication/NewsEvents/NewsEventsCarousel/NewsEventsCarousel";
 import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths';
 import MissionVisionValues from '../../components/modules/institutionalIdentity/MissionVisionValues/MissionVisionValues';
 import AcademicStatistics from '../../components/modules/academic/AcademicStatistics/AcademicStatistics';
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="Home-page">
       <main>
         <BannerCarousel />
-        <NewsEvents />
+        <NewsEventsCarousel />
         <OurStrengths />
         <MissionVisionValues />
         <AcademicStatistics />
