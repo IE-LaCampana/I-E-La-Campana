@@ -4,7 +4,7 @@ import NewsEventsCarousel from "../../components/modules/communication/NewsEvent
 import OurStrengths from '../../components/modules/educationalStrengths/OurStrengths/OurStrengths';
 import MissionVisionValues from '../../components/modules/institutionalIdentity/MissionVisionValues/MissionVisionValues';
 import AcademicStatistics from '../../components/modules/academic/AcademicStatistics/AcademicStatistics';
-import AlumniTestimonials from "../../components/modules/community/AlumniTestimonials/AlumniTestimonials";
+import TestimonialsCarousel from "../../components/modules/community/Testimonials/TestimonialsCarousel/TestimonialsCarousel";
 import HeadquartersMap from "../../components/modules/institutionalIdentity/HeadquartersMap/HeadquartersMap";
 import Footer from  "../../components/layouts/Footer/Footer"
 
@@ -20,9 +20,8 @@ const Home = () => {
         <OurStrengths />
         <MissionVisionValues />
         <AcademicStatistics />
-        <AlumniTestimonials />
+        <TestimonialsCarousel />
         <HeadquartersMap />
-        <Footer />
       </main>
     </div>
   );
