@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./NewsEventsCarousel.css";
 import NewsAndEventsList from "../../../communication/NewsEvents/NewsAndEventsList/NewsAndEventsList";
 import { Link } from "react-router-dom";
-import NewsCard from "../../../communication/NewsEvents/NewsCard/NewsCard"; // NUEVA importación
+import NewsCard from "../../../communication/NewsEvents/NewsCard/NewsCard";
 
 // Importar los datos desde el archivo compartido
 import { events, news } from "../../../../../data/newsEventsData";
@@ -109,12 +109,14 @@ const NewsEventsCarousel = () => {
       <div className="news-events-tabs">
         <button
           className={`tab-button ${activeTab === "events" ? "active" : ""}`}
+          data-tab="events"
           onClick={() => setActiveTab("events")}
         >
           <span className="tab-button-events">NUESTROS EVENTOS</span>
         </button>
         <button
           className={`tab-button ${activeTab === "news" ? "active" : ""}`}
+          data-tab="news"
           onClick={() => setActiveTab("news")}
         >
           <span className="tab-button-news">NUESTRAS NOTICIAS</span>
@@ -149,7 +151,10 @@ const NewsEventsCarousel = () => {
             </button>
 
             <div className="news-events-ver-mas-button">
-              <Link to={`/news-events?tab=${activeTab}`} className="ver-mas-button">
+              <Link
+                to={`/news-events?tab=${activeTab}`}
+                className="ver-mas-button"
+              >
                 <i className="bi bi-eye me-2"></i> Ver Más{" "}
                 {activeTab === "news" ? "Noticias" : "Eventos"}
               </Link>

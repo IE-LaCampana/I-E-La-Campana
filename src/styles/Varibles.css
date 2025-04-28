@@ -1,10 +1,72 @@
 :root{
-    --color-primario: #ffffff;  /* Blanco */
-    --color-secundario: #000000; /* Negro */
-    --color-acento-1: #e02059;  /* Rosa intenso */
-    --color-acento-2: #354e9e;  /* Azul oscuro */
-    --color-acento-3: #a9b0b3;  /* Gris claro */
-    --theme-palette-color-4: #192a3d;
+
+    /* === Background Colors === */
+--color-bg-primary: #ffffff; /* Fondo general */
+--color-bg-contrast: #f7f5f5; /* Fondo contrastado */
+
+/* === Text Colors === */
+--color-text-heading-primary: #081c2e;  /* Color para h1 y h2 */
+--color-text-heading-secondary: #333;  /* Color para h3 */
+--color-text-paragraph: #333333;  /* Color para los párrafos */
+
+/* === Button Colors === */
+--color-button-primary-bg: #308113; /* Fondo botón primario */
+--color-button-secondary-bg: #081c2e; /* Fondo botón secundario */
+--color-button-text: #ffffff; /* Texto botón secundario */
+--color-button-hover-bg: #08590c; /* Hover de botón */
+
+/* === Border Colors === */
+--color-border-primary: #ffffff; /* Bordes principales */
+--color-border-navigation: #3a092c; /* Borde navegación */
+--color-border-footer: #3a092c; /* Borde footer */
+
+/* === Button Border Colors === */
+--color-button-border-primary: #308113; /* Borde del botón primario */
+--color-button-border-secondary: #081c2e; /* Borde del botón secundario */
+--color-button-border-hover: #08590c; /* Borde del botón en hover */
+--color-button-border-focus: #354e9e; /* Borde del botón cuando está enfocado */
+--color-button-border-disabled: #308113; /* Borde del botón deshabilitado */
+
+/* === Header Colors === */
+--color-header-bg: #081c2e; /* Fondo header */
+--color-header-text: #e5e5e5; /* Texto del header */
+--color-header-icon: #e5e5e5; /* Íconos en el header */
+
+--color-menu-bg: #f3f7f9; /* Fondo para menú desplegado y contenedores relacionados */
+--color-menu-text: #333; /* Texto dentro del menú */
+--color-menu-hover-bg: #f5f5f5;
+--color-menu-icon: #333;
+
+
+/* === Navigation Colors === */
+--color-navigation-bg: #f1d9b7; /* Fondo navegación */
+--color-navigation-text: #e5e5e5; 
+--color-navigation-bg-darker: #edcea2; /* Fondo navegación más oscuro */
+--color-navigation-feature: #26352f; /* Elementos destacados en navegación */
+--color-navigation-border-bottom: rgba(255, 255, 255, 0.1); /* Borde inferior de los ítems de navegación */
+--color-navigation-border: #3a092c; /* Borde general de la navegación */
+
+/* === General Section Background === */
+--color-section-bg-primary: #ffffff; /* Fondo primario de la sección */
+--color-section-bg-secondary: #f3f7f9; /* Fondo secundario de la sección */
+--color-section-icon: #308113;
+
+
+/* === Footer Colors === */
+--color-footer-bg: #081c2e; /* Fondo footer */
+--color-footer-text: #f1d9b7;
+--color-footer-border: #3a092c;
+
+/* === Status Colors (Mensajes) === */
+--color-success-message: #82b875; /* Mensaje de éxito */
+--color-error-message: #b6534c; /* Mensaje de error */
+
+/* === Accent Colors === */
+--color-accent-primary: #e02059; /* Rosa intenso - botones o llamadas a acción */
+--color-accent-secondary: #354e9e; /* Azul oscuro - secundarios */
+--color-accent-tertiary: #a9b0b3; /* Gris claro - fondos suaves */
+--color-theme-palette-4: #192a3d; /* Azul muy oscuro - para temas específicos */
+
     --bs-white-rgb: 255, 255, 255;
 
 

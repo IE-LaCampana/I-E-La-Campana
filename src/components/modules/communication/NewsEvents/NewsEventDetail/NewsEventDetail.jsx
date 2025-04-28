@@ -77,4 +77,4 @@ const NewsEventDetail = () => {
   );
 }
 
-export default NewsEventDetail
+export default NewsEventDetail;
