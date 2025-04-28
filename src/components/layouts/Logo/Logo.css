@@ -10,7 +10,7 @@
   height: 3.5rem;
 }
 .logo h1 {
-  color: #e5e5e5;
+  color: var(--color-header-text);
   font-size: 22px;
   margin: 0 10px;
   --theme-text-transform: uppercase;
