@@ -11,6 +11,7 @@ import NewsEventDetail from "./components/modules/communication/NewsEvents/NewsE
 import TestimonialsList from "./components/modules/community/Testimonials/TestimonialsList/TestimonialsList";
 import TestimonialDetails from "./components/modules/community/Testimonials/TestimonialDetails/TestimonialDetails"
 import WhatsAppHelp from "./components/common/WhatsAppHelp/WhatsAppHelp";
+import BackToTop from "./components/common/BackToTop/BackToTop";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <Route path="/testimonios/:id" element={<TestimonialDetails />} />
       </Routes>
       <Footer />
-      <WhatsAppHelp phoneNumber="3503560227" mensaje="Hola, necesito informacion sobre la Institución Educativa La La Campana"/>
+      <WhatsAppHelp phoneNumber="3503560227" mensaje="Hola, necesito informacion sobre la Institución Educativa La La Campana" />
+      <BackToTop />
     </>
   );
 }
