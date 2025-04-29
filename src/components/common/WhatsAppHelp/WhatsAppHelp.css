@@ -16,7 +16,7 @@
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     color: #43474e;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: -.03em;
     line-height: 1.5;
     margin-right: 7px;
@@ -204,7 +204,7 @@
 
 @media (max-width: 1600px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
@@ -243,7 +243,7 @@
 
 @media (max-width: 1440px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
@@ -282,7 +282,7 @@
 
 @media (max-width: 1280px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
@@ -321,7 +321,7 @@
 
 @media (max-width: 1080px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
@@ -360,7 +360,7 @@
 
 @media (max-width: 992px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
@@ -399,7 +399,7 @@
 
 @media (max-width: 768px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button {
@@ -443,7 +443,7 @@
 
 @media (max-width: 480px) {
   .whatsapp-text-bubble {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .whatsapp-button i {
