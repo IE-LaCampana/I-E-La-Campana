@@ -5,19 +5,20 @@
 
 .headquarters-container .headquarters-title {
   text-align: center;
-  color: #333;
+  color: #e63e62;
   font-size: 2.5em;
   font-weight: 500;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.headquarters-container .headquarters-title strong {
+
+.headquarters-title strong {
   font-weight: 700;
-  color: #081c2e;
+  color: var(--color-text-heading-primary);
 }
 
 .headquarters-container .headquarters-description {
@@ -79,7 +80,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
   gap: 1em;
   position: relative;
 }
@@ -143,28 +144,12 @@
   }
 
   .headquarters-container .headquarters-title {
-    text-align: center;
-    color: #333;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-family: "Open Sans", Arial, sans-serif;
-    line-height: 1.5;
-    margin-bottom: 40px;
-  }
-
-  .headquarters-container .headquarters-title strong {
-    font-weight: 700;
-    color: #081c2e;
-  }
-
-  .headquarters-container .headquarters-description {
     font-size: 1.8em;
   }
 
-  .headquarters-grid .headquarters-item:hover {
-    transform: translateY(-5px);
+
+  .headquarters-container .headquarters-description {
+    font-size: 1.8em;
   }
 
   .headquarters-item .headquarters-name {
