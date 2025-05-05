@@ -25,7 +25,7 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  background-color: #081c2e;
+  background-color: var(--color-text-heading-primary);
   padding: 1.5rem 1.5rem;
   border-radius: 8px;
   font-weight: 500;
@@ -53,7 +53,7 @@
 }
 
 .control-button {
-  background-color: #081c2e;
+  background-color: var(--color-text-heading-primary);
   color: #e5e5e5 !important;
   font-family: "Montserrat", sans-serif;
   padding: 10px 16px;
@@ -66,7 +66,7 @@
 
 .prev-button,
 .next-button {
-  background-color: #081c2e;
+  background-color: var(--color-text-heading-primary);
   color: #e5e5e5 !important;
   padding: 10px;
   border-radius: 8px;
