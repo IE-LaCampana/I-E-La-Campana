@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import "./TestimonialDetails.css";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
-import Cenefa from "../../../../../assets/institutional/CENEFA.png";
+import Cenefa from "../../../../../assets/institutional/CENEFA-01.png";
 import { testimonials } from "../../../../../data/testimonialsData";
 
 const TestimonialDetails = () => {
