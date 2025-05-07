@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   const educationalCentersDropdown = [
-    { route: "/sede-principal", icon: "bi bi-buildings", content: "I.E. Principal", },
+    { route: "/sedes/la-campana", icon: "bi bi-buildings", content: "I.E. Principal", },
     { route: "/sede-piendamo-arriba", icon: "bi bi-geo-alt-fill", content: "C.D. Piendamó Arriba", },
     { route: "/sede-pueblito", icon: "bi bi-house-fill", content: "C.D.R.M. Pueblito", },
     { route: "/sede-tulcan", icon: "bi-house-door", content: "C.D.R.M. Tulcán", },
