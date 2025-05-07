@@ -9,9 +9,10 @@ import Footer from "./components/layouts/Footer/Footer";
 import NewsAndEventsList from "./components/modules/communication/NewsEvents/NewsAndEventsList/NewsAndEventsList";
 import NewsEventDetail from "./components/modules/communication/NewsEvents/NewsEventDetail/NewsEventDetail";
 import TestimonialsList from "./components/modules/community/Testimonials/TestimonialsList/TestimonialsList";
-import TestimonialDetails from "./components/modules/community/Testimonials/TestimonialDetails/TestimonialDetails"
+import TestimonialDetails from "./components/modules/community/Testimonials/TestimonialDetails/TestimonialDetails";
 import WhatsAppHelp from "./components/common/WhatsAppHelp/WhatsAppHelp";
 import BackToTop from "./components/common/BackToTop/BackToTop";
+import LaCampanaMainHeadquarter from "./pages/Headquarters/LaCampanaMainHeadquarter";
 
 function App() {
   return (
@@ -26,9 +27,13 @@ function App() {
         <Route path="/news-events/:type/:id" element={<NewsEventDetail />} />
         <Route path="/testimonios" element={<TestimonialsList />} />
         <Route path="/testimonios/:id" element={<TestimonialDetails />} />
+        <Route path="/sedes/la-campana" element={<LaCampanaMainHeadquarter />}/>
       </Routes>
       <Footer />
-      <WhatsAppHelp phoneNumber="3503560227" mensaje="Hola, necesito informacion sobre la Institución Educativa La La Campana" />
+      <WhatsAppHelp
+        phoneNumber="3503560227"
+        mensaje="Hola, necesito informacion sobre la Institución Educativa La La Campana"
+      />
       <BackToTop />
     </>
   );

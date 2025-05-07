@@ -4,8 +4,6 @@ import Slider from "react-slick";
 import { useEffect, useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Logo from "../../../components/layouts/Logo/Logo";
-import "./BannerCarousel.css";
 
 import WelcomeImage from "../../../assets/banners/img-i-e-la-campana.jpeg";
 import MisakBand from "../../..//assets/banners/MisakBand.jpg";
