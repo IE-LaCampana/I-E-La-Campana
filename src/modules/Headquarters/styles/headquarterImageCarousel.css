@@ -1,0 +1,266 @@
+/* HeadquarterImageCarousel.css */
+.headquarters-carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .headquarters-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .headquarters-slides-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .headquarters-slide {
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+  }
+  
+  .headquarters-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Nueva navegación lineal con flechas */
+  .headquarters-navigation-line {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    z-index: 10;
+  }
+  
+  /* Línea base que se extiende por toda la navegación incluyendo las flechas */
+  .headquarters-navigation-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: white;
+    z-index: -1;
+  }
+  
+  .headquarters-dots-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 150px; /* Espacio para las flechas */
+  }
+  
+  .headquarters-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #081c2e;
+    cursor: pointer;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 2;
+  }
+  
+  .headquarters-dot.active {
+    background-color: #081c2e;
+    border-color: #081c2e;
+  }
+  
+  /* Distribuir los puntos en la línea */
+  .headquarters-dots-line .headquarters-dot:nth-child(1) { left: 0%; }
+  .headquarters-dots-line .headquarters-dot:nth-child(2) { left: 20%; }
+  .headquarters-dots-line .headquarters-dot:nth-child(3) { left: 40%; }
+  .headquarters-dots-line .headquarters-dot:nth-child(4) { left: 60%; }
+  .headquarters-dots-line .headquarters-dot:nth-child(5) { left: 80%; }
+  .headquarters-dots-line .headquarters-dot:nth-child(6) { left: 100%; transform: translate(-100%, -50%); }
+  
+  .headquarters-arrow {
+    width: 50px; /* Ancho fijo para las flechas */
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Flechas en las puntas de las líneas */
+  .headquarters-arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .left-arrow::before {
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-width: 8px 12px 8px 0;
+    border-color: transparent white transparent transparent;
+    top: 1px;
+  }
+  
+  .right-arrow::before {
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-width: 8px 12px 8px 10px;
+    border-color: transparent transparent transparent white;
+    top: 1px;
+  }
+  
+  .headquarters-arrow:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Botón de detener (estilo rectangular verde como en la imagen) */
+  .headquarters-play-pause {
+    position: absolute;
+    bottom: 38px;
+    left: 38px;
+    background-color: #308113;
+    color: white;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  .headquarters-play-pause:hover {
+    background-color: #266b0e;
+  }
+  
+  .pause-icon {
+    margin-right: 8px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+  }
+  
+  .pause-icon::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 14px;
+    background-color: white;
+    left: 0;
+  }
+  
+  .pause-icon::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 14px;
+    background-color: white;
+    right: 0;
+  }
+  
+  .play-icon {
+    margin-right: 8px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  
+  @media(max-width: 1600px) {
+    .headquarters-play-pause {
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+    
+    .headquarters-navigation-line {
+      width: 50%;
+    }
+  }
+  
+  @media(max-width: 1440px) {
+    .headquarters-play-pause {
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+    
+    .headquarters-navigation-line {
+      width: 60%;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .headquarters-play-pause {
+      padding: 8px 14px;
+      font-size: 12px;
+      bottom: 25px;
+      left: 25px;
+    }
+    
+    .headquarters-navigation-line {
+      width: 70%;
+      bottom: 40px;
+    }
+    
+    .headquarters-dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  @media(max-width: 480px) {
+    .headquarters-carousel {
+      padding-bottom: 70%; /* Proporción más cuadrada para móviles */
+    }
+  
+    .headquarters-play-pause {
+      padding: 8px 12px;
+      font-size: 10px;
+      bottom: 90px;
+      left: 15px;
+    }
+  
+    .headquarters-navigation-line {
+      width: 80%;
+      bottom: 50px;
+    }
+    
+    .headquarters-dots-line {
+      margin: 0 30px;
+    }
+    
+    .headquarters-dot {
+      width: 10px;
+      height: 10px;
+    }
+    
+    .headquarters-arrow::before {
+      border-width: 6px 8px 6px 0; /* Flechas más pequeñas */
+    }
+    
+    .right-arrow::before {
+      border-width: 6px 0 6px 8px;
+    }
+  }
