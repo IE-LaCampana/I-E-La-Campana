@@ -1,0 +1,376 @@
+.history-container {
+    width: 100%;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .history-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 390px;
+  }
+  
+  .banner-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(224, 239, 239, 0.95) 0%,
+      rgba(224, 239, 239, 0.7) 15%,
+      rgba(224, 239, 239, 0.4) 30%,
+      rgba(224, 239, 239, 0.1) 45%,
+      transparent 50%
+    );
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-content {
+    padding-left: 10%;
+    width: 100%;
+  }
+  
+  .banner-title {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  .main-title {
+    color: #081c2e;
+    font-size: 3.5rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .banner-description {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner-descriptions {
+    margin: 50px auto;
+    max-width: 1000px;
+  }
+  
+  .history-content {
+    max-width: 1350px;
+    margin: 50px auto;
+    display: flex;
+  }
+  
+  .image-left {
+    flex-direction: row;
+  }
+  
+  .image-right {
+    flex-direction: row-reverse;
+  }
+  
+  .history-image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .history-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .history-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .history-item-title {
+    color: #081c2e;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+  
+  .history-description {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .history-main-description {
+    color: #555;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 1600px) {
+    .history-content {
+      max-width: 1300px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 3.5rem;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .banner-descriptions {
+      font-size: 16px;
+    }
+  
+    .history-item-title {
+      font-size: 2em;
+    }
+  
+    .history-description {
+      color: #333;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .history-content {
+      max-width: 1100px;
+    }
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 3.5rem;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .banner-descriptions {
+      font-size: 16px;
+    }
+  
+    .history-item-title {
+      font-size: 2em;
+    }
+  
+    .history-description {
+      color: #333;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .history-content {
+      max-width: 900px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 3.5rem;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .banner-descriptions {
+      font-size: 16px;
+    }
+  
+    .history-item-title {
+      font-size: 2em;
+    }
+  
+    .history-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .history-content {
+      max-width: 900px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 3.5rem;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .banner-descriptions {
+      font-size: 16px;
+    }
+  
+    .history-item-title {
+      font-size: 24px;
+    }
+  
+    .history-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .history-content {
+      max-width: 900px;
+    }
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    .history-banner {
+      margin-bottom: 480px;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .history-image-container {
+      max-width: 100%;
+    }
+  
+    .banner-descriptions {
+      font-size: 1em;
+      max-width: 750px;
+    }
+  
+    .history-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .history-item-title {
+      font-size: 24px;
+    }
+  
+    .history-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .history-content {
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px auto;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    .history-banner {
+      margin-bottom: 940px;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .history-image-container {
+      max-width: 100%;
+    }
+  
+    .banner-descriptions {
+      font-size: 1em;
+      max-width: 450px;
+    }
+  
+    .history-item-title {
+      font-size: 24px;
+    }
+  
+    .history-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .history-content {
+      max-width: 380px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    .history-banner {
+      margin-bottom: 940px;
+    }
+  
+    .banner-description {
+      font-size: 16px;
+    }
+  
+    .history-image-container {
+      max-width: 100%;
+    }
+  
+    .banner-descriptions {
+      font-size: 1em;
+      max-width: 350px;
+    }
+  
+    .history-item-title {
+      font-size: 24px;
+    }
+  
+    .history-description {
+      font-size: 1rem;
+    }
+  }
+  
