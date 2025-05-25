@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ItemNavbar from "../../modules/core/design-system/ItemNavbar/ItemNavbar";
 import Logo from "../../layouts/Logo/Logo";
-import "../Navbar/navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

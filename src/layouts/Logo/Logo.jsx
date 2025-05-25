@@ -1,5 +1,5 @@
 import LogoCampana from "../../assets/logos/Logo-I-E-La-Campana.png";
-import "../Logo/logo.css";
+import "./Logo.css";
 
 const Logo = () => {
   return (
