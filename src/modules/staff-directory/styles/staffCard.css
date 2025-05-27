@@ -1,0 +1,327 @@
+/* ===== ARCHIVO 5: src/modules/staff-directory/styles/staffCard.css ===== */
+.staff-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: fit-content;
+  max-width: 380px;
+  width: 100%;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.staff-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.staff-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.staff-card:hover .staff-card-image img {
+  transform: scale(1.05);
+}
+
+.staff-card-content {
+  padding: 20px;
+}
+
+.staff-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.staff-position {
+  font-size: 16px;
+  color: #6c757d;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.staff-contact {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; /* Centrar verticalmente el icono con el contenido */
+  gap: 20px; /* Separación entre el icono y el contenido */
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.staff-contact i {
+  color: #495057;
+  font-size: 22px;
+  width: 16px;
+}
+
+.contact-item span {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 500;
+  align-self: flex-start; /* Asegura que el texto se alinee a la izquierda */
+}
+
+.contact-value {
+  font-size: 14px;
+  color: #2c3e50;
+  margin: 0;
+  padding-left: 0; /* Removido el padding-left para alinear con el texto superior */
+  align-self: flex-start; /* Asegura que el texto se alinee a la izquierda */
+}
+
+@media (max-width: 1600px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 16px;
+  }
+  
+  .contact-value {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 16px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 16px;
+  }
+  
+  .contact-value {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 14px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 14px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 14px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 14px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-card:hover .staff-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .staff-card-content {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 16px;
+  }
+  
+  .staff-position {
+    font-size: 14px;
+  }
+  
+  .staff-contact {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    width: 16px;
+  }
+  
+  .contact-item span {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 14px;
+  }
+}

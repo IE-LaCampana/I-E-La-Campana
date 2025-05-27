@@ -1,0 +1,283 @@
+.staff-search-container {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background-color: var(--color-text-heading-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.search-button:hover {
+  background-color: #343a40;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-label {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 600;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.filter-select {
+  width: 200px;
+  padding: 10px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #495057;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.filter-help {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 1600px) {
+  .search-input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .search-input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .search-input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .search-input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-input {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input-container {
+    gap: 20px;
+  }
+  .staff-search-container {
+    padding: 50px 20px;
+  }
+  .search-input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input-container {
+    gap: 20px;
+  }
+  .staff-search-container {
+    padding: 50px 20px;
+  }
+  .search-input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .filter-label {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .filter-help {
+    font-size: 12px;
+  }
+}
