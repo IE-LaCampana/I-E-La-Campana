@@ -58,11 +58,6 @@
   --color-success-message: #82b875; /* Mensaje de éxito */
   --color-error-message: #b6534c; /* Mensaje de error */
 
-  /* === Accent Colors === */
-  --color-accent-primary: #e02059; /* Rosa intenso - botones o llamadas a acción */
-  --color-accent-secondary: #354e9e; /* Azul oscuro - secundarios */
-  --color-accent-tertiary: #a9b0b3; /* Gris claro - fondos suaves */
-  --color-theme-palette-4: #192a3d; /* Azul muy oscuro - para temas específicos */
 
   --bs-white-rgb: 255, 255, 255;
 
