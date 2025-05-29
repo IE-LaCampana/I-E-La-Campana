@@ -5,7 +5,7 @@ import AcademicPrograms from "../../../../modules/academic-programs/components/A
 import { laCampanaHistory } from "../../../../modules/history/data/laCampanaHistory";
 import History from "../../../../modules/history/components/History/History";
 import StaffDirectory from "../../../../modules/staff-directory/pages/StaffDirectory/StaffDirectory";
-import Facilities from "../../../../modules/facilities/pages/Facilities/Facilities"
+import EducationalServices from "../../../../modules/educational-services/pages/EducationalServices/EducationalServices";
 
 const LaCampana = () => {
   return (
@@ -15,7 +15,7 @@ const LaCampana = () => {
         <AcademicPrograms />
         <History data={laCampanaHistory} />
         <StaffDirectory />
-        <Facilities />
+        <EducationalServices />
       </main>
     </div>
   );

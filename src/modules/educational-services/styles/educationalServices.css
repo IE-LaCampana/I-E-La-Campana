@@ -1,15 +1,15 @@
-.facilities-container{
+.educational-services-container{
     max-width: 1100px;
     margin: 0 auto;
     background-color: var(--color-bg-primary);
     margin-bottom: 50px;
 }
 
-.facilities-content{
+.educational-services-content{
     text-align: center;
 }
 
-.facilities-title{
+.educational-services-title{
     text-align: center;
     color: #e63e62;
     font-size: 2.5em;
@@ -22,12 +22,12 @@
     padding: 50px 0;
 }
 
-.facilities-title strong{
+.educational-services-title strong{
     color: var(--color-text-heading-primary);
     font-weight: 700;
 }
 
-.facilities-grid{
+.educational-services-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
@@ -37,102 +37,104 @@
 }
 
 @media (max-width: 1600px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 1300px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 2.5em;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 1440px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 1100px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 1.8em;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 1280px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 1100px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 1.8em;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 1080px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 900px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 24px;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 992px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 900px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 24px;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 720px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 18px;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px){
-    .facilities-container{
+    .educational-services-container{
         max-width: 380px;
     }
     
-    .facilities-title{
+    .educational-services-title{
         font-size: 18px;
     }
     
-    .facilities-grid{
+    .educational-services-grid{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
 
 
 
