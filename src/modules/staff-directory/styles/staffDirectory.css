@@ -1,11 +1,9 @@
-/* ===== ARCHIVO 1: src/modules/staff-directory/styles/staffDirectory.css ===== */
 .staff-directory {
   max-width: 1350px;
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     sans-serif;
   background-color: #f8f9fa;
-  margin-bottom: 50px;
 }
 
 .staff-header {
