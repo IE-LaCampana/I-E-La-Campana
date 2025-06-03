@@ -87,31 +87,6 @@ const Navbar = () => {
     },
   ];
 
-  const academicProgramsDropdown = [
-    { route: "/prescolar", icon: "bi bi-emoji-smile", content: "Prescolar" },
-    { route: "/primaria", icon: "bi bi-book", content: "Básica Primaria" },
-    {
-      route: "/segundaria",
-      icon: "bi bi-journal-richtext",
-      content: "Básica Secundaria",
-    },
-    {
-      route: "/media-tecnica",
-      icon: "bi bi-mortarboard",
-      content: "Media Académica",
-    },
-    {
-      route: "/cursos",
-      icon: "bi bi-journal-bookmark",
-      content: "Cursos y Diploma",
-    },
-    {
-      route: "/calendario",
-      icon: "bi bi-calendar-week",
-      content: "Calendario Académico",
-    },
-  ];
-
   const accessDropdown = [
     { route: "/login", icon: "bi bi-key", content: "Iniciar Sesión" },
     { route: "/registro", icon: "bi bi-pencil-square", content: "Registrate" },
@@ -204,22 +179,16 @@ const Navbar = () => {
       dropdown: ourInstitutionDropdown,
     },
     {
-      id: "programas",
+      id: "vidad",
       route: "/",
-      content: "PROGRAMAS ACADEMICOS",
-      dropdown: academicProgramsDropdown,
+      content: "SERVICIOS",
+      dropdown: studentLifeDropdown,
     },
     {
       id: "ingresar",
       route: "/",
       content: "INGRESAR",
       dropdown: accessDropdown,
-    },
-    {
-      id: "vidad",
-      route: "/",
-      content: "VIDA ESTUDIANTIL",
-      dropdown: studentLifeDropdown,
     },
     {
       id: "ambiente",

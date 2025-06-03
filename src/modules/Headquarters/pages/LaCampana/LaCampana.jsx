@@ -6,6 +6,7 @@ import { laCampanaHistory } from "../../../../modules/history/data/laCampanaHist
 import History from "../../../../modules/history/components/History/History";
 import StaffDirectory from "../../../../modules/staff-directory/pages/StaffDirectory/StaffDirectory";
 import EducationalServices from "../../../../modules/educational-services/pages/EducationalServices/EducationalServices";
+import EducationalProjects from "../../../../modules/educational-projects/components/EducationalProjects/EducationalProjects";
 
 const LaCampana = () => {
   return (
@@ -16,6 +17,7 @@ const LaCampana = () => {
         <History data={laCampanaHistory} />
         <StaffDirectory />
         <EducationalServices />
+        <EducationalProjects />
       </main>
     </div>
   );

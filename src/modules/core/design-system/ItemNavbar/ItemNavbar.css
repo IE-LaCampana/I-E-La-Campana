@@ -17,7 +17,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--color-menu-bg);
+    background-color: var(--color-nav-bg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     border-radius: 8px;
@@ -63,7 +63,7 @@
 }
 
 .dropdown-link:hover {
-    background-color: var(--color-menu-hover-bg);
+    background-color: var(--color-nav-hover-bg);
 }
 
 .itemnavbar-li:hover .dropdown-menu {
@@ -82,7 +82,7 @@
 }
 
 .dropdown-menu .dropdown-item .dropdown-link i {
-    color: var(--color-menu-icon);
+    color: var(--color-nav-icon);
     fill: currentColor;
     width: 25px;
     height: 25px;
@@ -101,5 +101,5 @@
 }
 
 .dropdown-menu .dropdown-item .dropdown-link span {
-    color: var(--color-menu-text);
+    color: var(--color-nav-text-secondary);
 }

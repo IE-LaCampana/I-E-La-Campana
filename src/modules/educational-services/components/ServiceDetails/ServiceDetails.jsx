@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/serviceDetails.css";
+import Button from "../../../../modules/core/design-system/Button/Button";
 
 const ServiceDetails = ({ title, detailedInfo, onClose, isAnimating }) => {
   return (
@@ -50,24 +51,7 @@ const ServiceDetails = ({ title, detailedInfo, onClose, isAnimating }) => {
             </li>
           ))}
         </ul>
-        <div className="service-details-action-section">
-          <button
-            className="service-details-navigate-button"
-            disabled={isAnimating}
-          >
-            <svg
-              width="23"
-              height="23"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-            <span>Ver más detalles</span>
-          </button>
-        </div>
+        <Button label="Ver mas detalles" />
       </div>
     </div>
   );
