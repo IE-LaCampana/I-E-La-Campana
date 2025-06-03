@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/LocationCard.css";
+import "../../styles/locationCard.css";
 
 const LocationCard = ({ name, description, mapUrl }) => {
   return (
