@@ -27,7 +27,10 @@ function App() {
         <Route path="/news-events/:type/:id" element={<NewsEventDetail />} />
         <Route path="/testimonios" element={<TestimonialsList />} />
         <Route path="/testimonios/:id" element={<TestimonialDetails />} />
-        <Route path="/sedes/la-campana" element={<LaCampanaMainHeadquarter />} />
+        <Route
+          path="/sedes/la-campana"
+          element={<LaCampanaMainHeadquarter />}
+        />
       </Routes>
       <Footer />
       <WhatsAppHelp
