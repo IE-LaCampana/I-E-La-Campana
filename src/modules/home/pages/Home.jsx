@@ -5,7 +5,7 @@ import OurStrengths from "../../../modules/ourStrengths/components/OurStrengths/
 import MissionVisionValues from "../../../modules/mission-vision-values/components/MissionVisionValues/MissionVisionValues";
 import AcademicStatistics from "../../../modules/academic-statistics/components/AcademicStatistics/AcademicStatistics";
 import TestimonialsCarousel from "../../../modules/testimonials/components/TestimonialsCarousel/TestimonialsCarousel";
-import HeadquartersMap from "../../../modules/headquarters-map/components/HeadquartersMap/HeadquartersMap";
+import LocationCarousel from "../../../modules/location/components/LocationCarousel/LocationCarousel";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
         <MissionVisionValues />
         <AcademicStatistics />
         <TestimonialsCarousel />
-        <HeadquartersMap />
+        <LocationCarousel />
       </main>
     </div>
   );
