@@ -1,0 +1,73 @@
+.location-card{
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.location-card .headquarters-item .map-container{
+    height: 500px;
+}
+    
+
+
+
+@media (max-width: 1600px){
+    .location-card{
+        max-width: 1300px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 500px;
+    }
+}
+
+@media (max-width: 1440px){
+    .location-card{
+        max-width: 1100px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 500px;
+    }
+}
+
+@media (max-width: 1280px){
+    .location-card{
+        max-width: 1100px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px){
+    .location-card{
+        max-width: 900px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .location-card{
+        max-width: 720px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .location-card{
+        max-width: 380px;
+    }
+
+    .location-card .headquarters-item .map-container{
+        height: 500px;
+    }
+}
+
