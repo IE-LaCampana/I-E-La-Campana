@@ -12,7 +12,7 @@ const EducationalProjects = () => {
       </h1>
       <p className="educational-projects-description">
         En la Institución Educativa La Campana, los
-        <strong>Proyectos Educativos</strong> representan una parte fundamental
+        <strong> Proyectos Educativos</strong> representan una parte fundamental
         de nuestra propuesta pedagógica, orientada al desarrollo integral de
         nuestros estudiantes. A través de estas iniciativas, buscamos fomentar
         competencias académicas, ciudadanas, culturales y ambientales,

@@ -1,0 +1,105 @@
+/* LocationCard Component Styles */
+.headquarters-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  .headquarters-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .headquarters-item .headquarters-name {
+    padding: 16px 0 0 0;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 0.7rem;
+  }
+  
+  .headquarters-item .headquarters-description {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: #333;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .headquarters-item .map-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .headquarters-item .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Media Queries for LocationCard */
+  @media (max-width: 1600px) {
+    .headquarters-item .headquarters-name {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .headquarters-item .headquarters-name {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .headquarters-item .headquarters-name {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .headquarters-item .headquarters-name {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .headquarters-item .headquarters-name {
+      font-size: 1.8em;
+    }
+  
+    .headquarters-item .map-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .headquarters-item .headquarters-name {
+      font-size: 18px;
+    }
+  
+    .headquarters-item .map-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headquarters-item .headquarters-name {
+      font-size: 18px;
+      font-family: Poppins, sans-serif;
+    }
+  
+    .headquarters-item .map-container {
+      height: 250px;
+    }
+  }
