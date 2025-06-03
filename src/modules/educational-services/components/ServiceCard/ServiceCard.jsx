@@ -3,12 +3,11 @@ import "../../styles/serviceCard.css";
 import ServiceDetails from "../ServiceDetails/ServiceDetails";
 import useFlipCard from "../../hooks/useFlipCard";
 
-
 const ServiceCard = ({ title, image, detailedInfo }) => {
   const { isFlipped, isAnimating, handleFlip } = useFlipCard();
 
   return (
-    <div className="service-card-container">
+    <div className={`service-card-container ${isFlipped ? "flipped" : ""}`}>
       <div
         className={`service-card-flip-wrapper ${
           isFlipped ? "service-card-flipped" : ""

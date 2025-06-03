@@ -24,7 +24,7 @@
   .academic-programs .programs-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
+    gap: 1em;
     margin-bottom: 50px;
   }
   
@@ -32,7 +32,7 @@
     position: relative;
     border-radius: 12px;
     cursor: pointer;
-    height: 300px;
+    height: 400px;
     perspective: 1500px;
   }
   
@@ -71,7 +71,6 @@
   .programs-grid .program-card .program-card-border {
     position: relative;
     height: 100%;
-    border: 5px solid white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -108,7 +107,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: var(--color-button-primary-bg);
+    background-color: var(--color-btn-primary-bg);
     width: 50px;
     height: 50px;
     display: flex;
