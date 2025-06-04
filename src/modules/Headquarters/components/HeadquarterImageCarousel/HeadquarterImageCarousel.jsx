@@ -2,13 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import "../../styles/headquarterImageCarousel.css";
 import { laCampanaImages } from "../../data/LaCampanaCarouselData";
 
-const HeadquarterImageCarousel = () => {
+const HeadquarterImageCarousel = ({ slides }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
   const slideIntervalRef = useRef(null);
-
-  const slides = laCampanaImages;
 
   useEffect(() => {
     if (isPlaying) {

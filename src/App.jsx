@@ -13,6 +13,7 @@ import TestimonialDetails from "./modules/testimonials/components/TestimonialDet
 import WhatsAppHelp from "./modules/core/design-system/WhatsAppHelp/WhatsAppHelp";
 import BackToTop from "./modules/core/design-system/BackToTop/BackToTop";
 import LaCampanaMainHeadquarter from "./modules/Headquarters/pages/LaCampana/LaCampana";
+import Manantial from "./modules/Headquarters/pages/Manantial/Manantial"
 
 function App() {
   return (
@@ -27,10 +28,8 @@ function App() {
         <Route path="/news-events/:type/:id" element={<NewsEventDetail />} />
         <Route path="/testimonios" element={<TestimonialsList />} />
         <Route path="/testimonios/:id" element={<TestimonialDetails />} />
-        <Route
-          path="/sedes/la-campana"
-          element={<LaCampanaMainHeadquarter />}
-        />
+        <Route path="/sedes/la-campana" element={<LaCampanaMainHeadquarter />} />
+        <Route path="/sede/manantial" element={<Manantial />}/>
       </Routes>
       <Footer />
       <WhatsAppHelp

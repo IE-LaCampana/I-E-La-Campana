@@ -1,8 +1,6 @@
-import React from "react";
-import ServicesData from "../../data/servicesData"; 
 import { ServiceCard } from "../../components";
 import "../../styles/educationalServices.css";
-const EducationalServices = () => {
+const EducationalServices = ({ servicesData }) => {
   return (
     <div className="educational-services-container">
       <div className="educational-services-content">
@@ -11,7 +9,7 @@ const EducationalServices = () => {
         </h2>
       </div>
       <div className="educational-services-grid">
-        {ServicesData.map((service) => (
+        {servicesData.map((service) => (
           <ServiceCard key={service.id} {...service} />
         ))}
       </div>
