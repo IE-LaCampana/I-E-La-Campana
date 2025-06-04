@@ -1,42 +1,48 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../../styles/staffCard.css";
 
-const StaffCard = ({ staff }) => {
+const StaffCard = ({
+  name,
+  image,
+  specialization,
+  experience,
+  level,
+  position,
+}) => {
   return (
     <div className="staff-card">
       <div className="staff-card-image">
         <img
-          src={staff.image}
-          alt={staff.name}
-          onError={(e) => {
-            e.target.src = "/placeholder-avatar.png"; // Imagen por defecto si falla la carga
-          }}
+          src={image}
+          alt={name}
         />
       </div>
       <div className="staff-card-content">
-        <h3 className="staff-name">{staff.name}</h3>
-        <p className="staff-position">{staff.position}</p>
+        <h3 className="staff-name">{name}</h3>
+        <p className="staff-position">{position}</p>
 
         <div className="staff-contact">
-          <i class="bi bi-mortarboard"></i>
+          <i className="bi bi-mortarboard"></i>
           <div className="contact-item">
             <span>Especialización</span>
-            <p className="contact-value">{staff.specialization}</p>
+            <p className="contact-value">{specialization}</p>
           </div>
         </div>
 
         <div className="staff-contact">
-          <i class="bi bi-briefcase"></i>
+          <i className="bi bi-briefcase"></i>
           <div className="contact-item">
             <span>Experiencia</span>
-            <p className="contact-value">{staff.experience}</p>
+            <p className="contact-value">{experience}</p>
           </div>
         </div>
+
         <div className="staff-contact">
-          <i class="bi bi-bar-chart-line"></i>
+          <i className="bi bi-bar-chart-line"></i>
           <div className="contact-item">
             <span>Nivel Educativo</span>
-            <p className="contact-value">{staff.level}</p>
+            <p className="contact-value">{level}</p>
           </div>
         </div>
       </div>
@@ -44,6 +50,14 @@ const StaffCard = ({ staff }) => {
   );
 };
 
+StaffCard.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  specialization: PropTypes.string,
+  experience: PropTypes.string,
+  level: PropTypes.string,
+  position: PropTypes.string,
+};
+
 export default StaffCard;
-
-

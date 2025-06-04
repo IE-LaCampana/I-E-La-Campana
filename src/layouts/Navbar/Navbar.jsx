@@ -47,7 +47,7 @@ const Navbar = () => {
       content: "E.R.M. Santa Lucía",
     },
     {
-      route: "/sede-manantial",
+      route: "/sede/manantial",
       icon: "bi bi-water",
       content: "E.R.M. Manantial",
     },

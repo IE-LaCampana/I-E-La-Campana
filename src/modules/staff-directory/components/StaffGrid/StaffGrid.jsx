@@ -1,9 +1,8 @@
-import React from "react";
 import StaffCard from "../../components/StaffCard/StaffCard";
 import "../../styles/staffGrid.css";
 
 const StaffGrid = ({ staff = [] }) => {
-  if (!staff || staff.length === 0) {
+  if (!staff.length) {
     return (
       <div className="staff-empty">
         <i className="bi bi-people"></i>
@@ -15,12 +14,20 @@ const StaffGrid = ({ staff = [] }) => {
 
   return (
     <div className="staff-grid">
-      {staff.map((member, index) => (
-        <StaffCard
-          key={member.id ? `staff-${member.id}` : `staff-${index}`}
-          staff={member}
-        />
-      ))}
+      {staff.map(
+        ({ id, name, image, specialization, experience, level, position }) => (
+          <StaffCard
+            key={id}
+            id={id}
+            name={name}
+            image={image}
+            specialization={specialization}
+            experience={experience}
+            level={level}
+            position={position}
+          />
+        )
+      )}
     </div>
   );
 };

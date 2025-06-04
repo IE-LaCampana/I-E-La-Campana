@@ -1,10 +1,9 @@
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import projectData from "../../data/projectData";
 import "../../styles/educationalProjects.css";
 
 
-const EducationalProjects = () => {
+const EducationalProjects = ({ projectData }) => {
   return (
     <div className="educational-projects-container">
       <h1 className="educational-projects-title">
