@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/staffSearch.css";
 
 const StaffFilter = ({ filterArea, onFilterChange, areas }) => {

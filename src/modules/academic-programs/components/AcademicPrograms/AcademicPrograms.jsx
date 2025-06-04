@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/academicPrograms.css";
-import { academicPrograms } from "../../data/academicProgramsData";
 
-const AcademicPrograms = () => {
+const AcademicPrograms = ({ academicPrograms }) => {
   const [flippedCard, setFlippedCard] = useState(null);
 
   const handleCardFlip = (index) => {
@@ -13,12 +12,31 @@ const AcademicPrograms = () => {
     }
   };
 
+  // Configuración dinámica del grid basada en la cantidad de datos
+  const getGridConfig = () => {
+    if (academicPrograms.length <= 2) {
+      return { columns: 2, gap: "3rem" };
+    }
+    if (academicPrograms.length === 3) {
+      return { columns: 3, gap: "2rem" };
+    }
+    return { columns: 4, gap: "1rem" };
+  };
+
+  const gridConfig = getGridConfig();
+
   return (
     <div className="academic-programs">
       <h1 className="academic-programs-title">
         <strong>PROGRAMAS </strong>ACADÉMICOS
       </h1>
-      <div className="programs-grid">
+      <div
+        className="programs-grid"
+        style={{
+          gridTemplateColumns: `repeat(${gridConfig.columns}, 1fr)`,
+          gap: gridConfig.gap,
+        }}
+      >
         {academicPrograms.map((programa, index) => (
           <div
             key={index}
