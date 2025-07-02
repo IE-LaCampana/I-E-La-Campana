@@ -1,6 +1,6 @@
 import React from "react";
-import HeadquarterImageCarousel from "../../../../modules/Headquarters/components/HeadquarterImageCarousel/HeadquarterImageCarousel";
-import { laCampanaImages } from "../../data/LaCampanaCarouselData";
+import Carousel from "../../../../modules/core/design-system/Carousel/Carousel";
+import { carouselLaCampanaData } from "../../../../modules/Headquarters/data/carouselLaCampanaData";
 import AcademicPrograms from "../../../../modules/academic-programs/components/AcademicPrograms/AcademicPrograms";
 import { academicPrograms } from "../../../../modules/academic-programs/data/academicProgramsData";
 import { laCampanaHistory } from "../../../../modules/history/data/laCampanaHistory";
@@ -21,7 +21,11 @@ const LaCampana = () => {
   return (
     <div>
       <main>
-        <HeadquarterImageCarousel slides={laCampanaImages} />
+        <Carousel
+          slides={carouselLaCampanaData}
+          showGroupLabel={false}
+          navigationStyle="headquarters"
+        />
         <AcademicPrograms academicPrograms={academicPrograms} />
         <History data={laCampanaHistory} />
         <StaffDirectory customStaffData={staffData} />

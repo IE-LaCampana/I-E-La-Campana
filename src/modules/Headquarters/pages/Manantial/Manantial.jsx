@@ -1,5 +1,5 @@
-import HeadquarterImageCarousel from "../../../../modules/Headquarters/components/HeadquarterImageCarousel/HeadquarterImageCarousel";
-import { ManantialCarouselData } from "../../data/ManantialCarouselData";
+import Carousel from "../../../../modules/core/design-system/Carousel/Carousel";
+import { carouselManantialData } from "../../data/carouselManantialData";
 import AcademicPrograms from "../../../../modules/academic-programs/components/AcademicPrograms/AcademicPrograms";
 import { academicProgramsManantialData } from "../../../../modules/academic-programs/data/academicProgramsManantialData";
 import History from "../../../../modules/history/components/History/History"
@@ -9,8 +9,6 @@ import  staffDirectoryManantialData  from "../../../../modules/staff-directory/d
 import "../../styles/manantial.css";
 import EducationalServices from "../../../../modules/educational-services/components/EducationalServices/EducationalServices"
 import servicesData from "../../../../modules/educational-services/data/servicesData";
-import EducationalProjects from "../../../../modules/educational-projects/components/EducationalProjects/EducationalProjects";
-import projectData from "../../../../modules/educational-projects/data/projectManantialData";
 import LocationCard from "../../../../modules/location/components/LocationCard/LocationCard";
 import locationData from "../../../../modules/location/data/locationData";
 
@@ -20,12 +18,15 @@ const Manantial = () => {
   return (
     <div>
       <main>
-        <HeadquarterImageCarousel slides={ManantialCarouselData} />
+        <Carousel
+          slides={carouselManantialData}
+          showGroupLabel={false}
+          navigationStyle="headquarters"
+        />
         <AcademicPrograms academicPrograms={academicProgramsManantialData} />
         <History data={manantialData} />
         <StaffDirectory customStaffData={staffDirectoryManantialData} />
         <EducationalServices servicesData={servicesData} />
-        <EducationalProjects projectData={projectData} />
         {laCampanaLocation && (
           <div className="location-card">
             <h1 className="headquarters-title">
