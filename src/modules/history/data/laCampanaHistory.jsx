@@ -4,7 +4,7 @@ import historiaImage2 from "../../../assets/institutional/HistoriaImage2.webp";
 export const laCampanaHistory = [
   {
     id: 1,
-    title: "Centro docente Piendamo Arriba",
+    title: "Institución Educativa La Campana",
     subtitle: "Cien años y contando",
     image: historiaImage2,
     description:

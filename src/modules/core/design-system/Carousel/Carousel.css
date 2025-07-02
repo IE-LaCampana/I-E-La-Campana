@@ -1,0 +1,426 @@
+/* Carousel.css - Estilos base y mejorados */
+
+/* === ESTILOS BASE DEL CAROUSEL === */
+.headquarters-carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.headquarters-slider {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.headquarters-slides-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.headquarters-slide {
+  width: 100%;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.headquarters-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === GROUP LABEL - NUEVO COMPONENTE === */
+.group-label {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #308113; /* Verde consistente con el sistema */
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.group-label:hover {
+  background-color: #266b0e; /* Verde más oscuro en hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.group-label span {
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.group-label strong {
+  font-weight: 700;
+}
+
+/* === NAVEGACIÓN ESTILO HEADQUARTERS (ORIGINAL) === */
+.headquarters-navigation-line {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  z-index: 10;
+}
+
+.headquarters-navigation-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: white;
+  z-index: -1;
+}
+
+.headquarters-dots-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 100px);
+  margin: 0 50px;
+}
+
+.headquarters-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #081c2e;
+  cursor: pointer;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.headquarters-dot:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.headquarters-dot.active {
+  background-color: #081c2e;
+  border-color: #081c2e;
+}
+
+/* Distribución de puntos en la línea */
+.headquarters-dots-line .headquarters-dot:nth-child(1) { left: 0%; }
+.headquarters-dots-line .headquarters-dot:nth-child(2) { left: 20%; }
+.headquarters-dots-line .headquarters-dot:nth-child(3) { left: 40%; }
+.headquarters-dots-line .headquarters-dot:nth-child(4) { left: 60%; }
+.headquarters-dots-line .headquarters-dot:nth-child(5) { left: 80%; }
+.headquarters-dots-line .headquarters-dot:nth-child(6) { left: 100%; transform: translate(-100%, -50%); }
+
+.headquarters-arrow {
+  width: 50px;
+  height: 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.headquarters-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.left-arrow::before {
+  left: -10px;
+  transform: translateY(-45%);
+  border-width: 8px 12px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right-arrow::before {
+  right: -10px;
+  transform: translateY(-45%);
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent white;
+}
+
+.headquarters-arrow:hover {
+  transform: scale(1.2);
+}
+
+/* === NAVEGACIÓN ESTILO BANNER (NUEVA) === */
+.banner-carousel-dots {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+}
+
+.custom-dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-dot:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.custom-dot.active {
+  background-color: #308113; /* Verde consistente */
+  border-color: #308113;
+}
+
+/* === BOTÓN PLAY/PAUSE === */
+.headquarters-play-pause {
+  position: absolute;
+  bottom: 38px;
+  left: 11%;
+  background-color: #308113;
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.headquarters-play-pause:hover {
+  background-color: #266b0e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pause-icon {
+  margin-right: 8px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.pause-icon::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background-color: white;
+  left: 0;
+}
+
+.pause-icon::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background-color: white;
+  right: 0;
+}
+
+.play-icon {
+  margin-right: 8px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent white;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media(max-width: 1600px) {
+  .headquarters-play-pause {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+  
+  .headquarters-navigation-line {
+    width: 50%;
+  }
+  
+  .group-label {
+    padding: 1.2rem;
+  }
+  
+  .group-label span {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 1440px) {
+  .headquarters-carousel {
+    height: 500px;
+  }
+  
+  .headquarters-slide {
+    height: 500px;
+  }
+  
+  .headquarters-play-pause {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  
+  .headquarters-navigation-line {
+    width: 50%;
+  }
+  
+  .group-label {
+    left: 11%;
+    padding: 1rem;
+  }
+  
+  .group-label span {
+    font-size: 16px;
+  }
+  
+  .banner-carousel-dots {
+    bottom: 50px;
+  }
+}
+
+@media(max-width: 768px) {
+  .headquarters-play-pause {
+    padding: 8px 14px;
+    font-size: 12px;
+    bottom: 25px;
+    left: 25px;
+  }
+  
+  .headquarters-navigation-line {
+    width: 70%;
+    bottom: 40px;
+  }
+  
+  .headquarters-dot {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .group-label {
+    top: 15%;
+    left: 5%;
+    padding: 0.8rem;
+  }
+  
+  .group-label span {
+    font-size: 14px;
+  }
+  
+  .custom-dot {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .banner-carousel-dots {
+    bottom: 40px;
+  }
+}
+
+@media(max-width: 480px) {
+  .headquarters-carousel {
+    height: 600px;
+  }
+  
+  .headquarters-slide {
+    height: 600px;
+  }
+
+  .headquarters-play-pause {
+    padding: 10px 15px;
+    font-size: 10px;
+    bottom: 70px;
+    left: 15px;
+  }
+
+  .headquarters-navigation-line {
+    width: 80%;
+    bottom: 30px;
+  }
+  
+  .headquarters-dots-line {
+    margin: 3px 30px 0;
+  }
+  
+  .headquarters-dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .headquarters-arrow::before {
+    border-width: 6px 8px 6px 0;
+  }
+  
+  .right-arrow::before {
+    border-width: 6px 0 6px 8px;
+  }
+  
+  .group-label {
+    top: 10%;
+    left: 5%;
+    padding: 15px 20px;
+  }
+  
+  .group-label span {
+    font-size: 14px;
+  }
+  
+  .custom-dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .custom-dots-container {
+    gap: 10px;
+  }
+  
+  .banner-carousel-dots {
+    bottom: 30px;
+  }
+}
