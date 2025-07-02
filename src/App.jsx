@@ -14,6 +14,12 @@ import WhatsAppHelp from "./modules/core/design-system/WhatsAppHelp/WhatsAppHelp
 import BackToTop from "./modules/core/design-system/BackToTop/BackToTop";
 import LaCampanaMainHeadquarter from "./modules/Headquarters/pages/LaCampana/LaCampana";
 import Manantial from "./modules/Headquarters/pages/Manantial/Manantial"
+import Carmelo from "./modules/Headquarters/pages/Carmelo/Carmelo";
+import PiendamoArriba from "./modules/Headquarters/pages/PiendamoArriba/PiendamoArriba";
+import Pueblito from "./modules/Headquarters/pages/Pueblito/Pueblito";
+import SantaLucia from "./modules/Headquarters/pages/SantaLucia/SantaLucia";
+import Tulcan from "./modules/Headquarters/pages/Tulcan/Tulcan";
+
 
 function App() {
   return (
@@ -28,8 +34,13 @@ function App() {
         <Route path="/news-events/:type/:id" element={<NewsEventDetail />} />
         <Route path="/testimonios" element={<TestimonialsList />} />
         <Route path="/testimonios/:id" element={<TestimonialDetails />} />
-        <Route path="/sedes/la-campana" element={<LaCampanaMainHeadquarter />} />
-        <Route path="/sede/manantial" element={<Manantial />}/>
+        <Route path="/sede/la-campana" element={<LaCampanaMainHeadquarter />} />
+        <Route path="/sede/manantial" element={<Manantial />} />
+        <Route path="/sede/carmelo" element={<Carmelo />} />
+        <Route path="/sede/piendamo-arriba" element={<PiendamoArriba />} />
+        <Route path="/sede/pueblito" element={<Pueblito />} />
+        <Route path="/sede/santa-lucia" element={<SantaLucia />} />
+        <Route path="/sede/tulcan" element={<Tulcan />} />
       </Routes>
       <Footer />
       <WhatsAppHelp

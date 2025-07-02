@@ -12,7 +12,6 @@ const AcademicPrograms = ({ academicPrograms }) => {
     }
   };
 
-  // Configuración dinámica del grid basada en la cantidad de datos
   const getGridConfig = () => {
     if (academicPrograms.length <= 2) {
       return { columns: 2, gap: "3rem" };

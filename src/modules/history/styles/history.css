@@ -103,7 +103,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    margin: 50px 20px;
   }
   
   .history-item-title {
@@ -119,7 +119,7 @@
     color: #333;
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin: 0;
   }
   
   .history-main-description {
