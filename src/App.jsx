@@ -19,7 +19,7 @@ import PiendamoArriba from "./modules/Headquarters/pages/PiendamoArriba/Piendamo
 import Pueblito from "./modules/Headquarters/pages/Pueblito/Pueblito";
 import SantaLucia from "./modules/Headquarters/pages/SantaLucia/SantaLucia";
 import Tulcan from "./modules/Headquarters/pages/Tulcan/Tulcan";
-
+import AboutUsPage from "./modules/about-us/pages/AboutUsPage/AboutUsPage"
 
 function App() {
   return (
@@ -41,6 +41,7 @@ function App() {
         <Route path="/sede/pueblito" element={<Pueblito />} />
         <Route path="/sede/santa-lucia" element={<SantaLucia />} />
         <Route path="/sede/tulcan" element={<Tulcan />} />
+        <Route path="/quienes-somos" element={<AboutUsPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
