@@ -1,0 +1,496 @@
+.himno-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.himno-card-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.himno-card__title {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1f2937;
+  border-bottom: 3px solid var(--color-text-heading-secondary);
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: block;
+}
+
+
+.himno-card__main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.audio-player {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+.audio-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play-pause-btn {
+  background: var(--color-btn-primary-bg, #dc2626);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.play-pause-btn:hover {
+  background: var(--color-btn-primary-hover, #b91c1c);
+  transform: scale(1.05);
+}
+
+.play-pause-btn:active {
+  transform: scale(0.95);
+}
+
+.progress-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+.progress-bar:hover {
+  height: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-btn-primary-bg, #dc2626),
+    #ef4444
+  );
+  border-radius: 3px;
+  transition: width 0.1s ease;
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.download-btn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.download-btn:hover {
+  background: #4b5563;
+  transform: scale(1.05);
+}
+
+.download-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.download-btn svg:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.himno-card__content {
+  text-align: left;
+}
+
+.himno-verse {
+  margin-bottom: 1em;
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--color-text-body-primary);
+  font-style: italic;
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.himno-verse:last-child {
+  margin-bottom: 0;
+}
+
+.himno-card__divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.himno-card__divider img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media(max-width: 1600px){
+  .himno-card {
+    max-width: 1100px;
+  }
+  
+  .himno-card__title {
+    font-size: 1.75em;
+  }
+  
+  .himno-card__main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .audio-player {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+  }
+  
+  .progress-bar:hover {
+    height: 8px;
+  }
+  
+  .time-display {
+    font-size: 0.875rem;
+  }
+  
+  .download-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .download-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .himno-verse {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 1440px){
+  .himno-card {
+    max-width: 1100px;
+  }
+  
+  .himno-card__title {
+    font-size: 1.75em;
+  }
+  
+  .himno-card__main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .audio-player {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+  }
+  
+  .progress-bar:hover {
+    height: 8px;
+  }
+  
+  .time-display {
+    font-size: 0.875rem;
+  }
+  
+  .download-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .download-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .himno-verse {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 1280px){
+  .himno-card {
+    max-width: 1100px;
+  }
+  
+  .himno-card__title {
+    font-size: 1.75em;
+  }
+  
+  .himno-card__main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .audio-player {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+  }
+  
+  .progress-bar:hover {
+    height: 8px;
+  }
+  
+  .time-display {
+    font-size: 0.875rem;
+  }
+  
+  .download-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .download-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .himno-verse {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 1080px){
+  .himno-card {
+    max-width: 1100px;
+  }
+  
+  .himno-card__title {
+    font-size: 1.75em;
+  }
+  
+  .himno-card__main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .audio-player {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+  }
+  
+  .progress-bar:hover {
+    height: 8px;
+  }
+  
+  .time-display {
+    font-size: 0.875rem;
+  }
+  
+  .download-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .download-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .himno-verse {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 992px){
+  .himno-card {
+    max-width: 1100px;
+  }
+  
+  .himno-card__title {
+    font-size: 1.75em;
+  }
+  
+  .himno-card__main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .audio-player {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+  }
+  
+  .progress-bar:hover {
+    height: 8px;
+  }
+  
+  .time-display {
+    font-size: 0.875rem;
+  }
+  
+  .download-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .download-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .himno-verse {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .himno-card__title {
+    font-size: 1.5rem;
+  }
+
+  .himno-card__main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .audio-player {
+    padding: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .audio-controls {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .progress-container {
+    flex: 1;
+  }
+
+  .play-pause-btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .himno-verse {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .symbol-card__description {
+    margin-bottom: 0;
+}
+
+.symbol-card__divider {
+  margin-top: 50px;
+}
+}
+
+@media (max-width: 480px) {
+  .himno-card-container {
+    padding: 50px 0;
+}
+
+  .himno-card__title {
+    font-size: 1.3rem;
+  }
+
+  .play-pause-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .himno-verse {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .time-display {
+    font-size: 0.8rem;
+  }
+}

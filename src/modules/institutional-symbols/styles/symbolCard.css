@@ -1,0 +1,379 @@
+.symbols-page {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.symbols-page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.symbols-page-content {
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  background-image: url("../../../assets/institutional/simbolos-institucionales.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.symbols-page-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 15px;
+}
+
+.curved-bottom {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.curved-svg {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+
+.decorative-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  display: flex;
+  z-index: 2;
+}
+
+.line-segment {
+  flex: 1;
+  height: 100%;
+}
+
+.line-segment.red {
+  background-color: var(--color-text-heading-secondary);
+}
+
+.line-segment.blue {
+  background-color: var(--color-text-heading-primary);
+}
+
+.line-segment.yellow {
+  background-color: var(--color-btn-primary-bg);
+}
+
+.symbols-page__title {
+  color: #e63e62;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.symbols-page__title strong {
+  color: var(--color-text-heading-primary);
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.symbols-page__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.symbol-card-container {
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1350px;
+  overflow: hidden;
+  margin: 5em 0;
+  background: #ffffff;
+}
+
+.symbol-card__image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.symbol-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 300px;
+}
+
+.symbol-card__content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.symbol-card__title {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-heading-primary);
+  border-bottom: 3px solid var(--color-text-heading-secondary);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.symbol-card__description {
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--color-text-body-primary);
+}
+
+.color-block {
+  padding: 0;
+  text-align: justify;
+  line-height: 1.5;
+  color: black;
+}
+
+.symbol-card__divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.symbol-card__divider img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1600px) {
+  .symbols-page__cards {
+    max-width: 1300px;
+  }
+  .curved-svg {
+    height: 120px;
+  }
+
+  .symbols-page__title {
+    font-size: 2em;
+  }
+
+  .symbol-card-container {
+    max-width: 1300px;
+  }
+
+  .symbol-card__image {
+    max-height: 300px;
+  }
+
+  .symbol-card__title {
+    font-size: 2em;
+  }
+
+  .symbol-card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .symbols-page__cards {
+    max-width: 1100px;
+  }
+
+  .curved-svg {
+    height: 120px;
+  }
+
+  .symbols-page__title {
+    font-size: 2em;
+  }
+
+  .symbol-card-container {
+    max-width: 1100px;
+  }
+
+  .symbol-card__image {
+    max-height: 300px;
+  }
+
+  .symbol-card__title {
+    font-size: 2em;
+  }
+
+  .symbol-card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .symbols-page__cards {
+    max-width: 1100px;
+  }
+
+  .curved-svg {
+    height: 120px;
+  }
+
+  .symbols-page__title {
+    font-size: 24px;
+  }
+
+  .symbol-card-container {
+    max-width: 1100px;
+  }
+
+  .symbol-card__image {
+    max-height: 300px;
+  }
+
+  .symbol-card__title {
+    font-size: 24px;
+  }
+
+  .symbol-card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .symbols-page__cards {
+    max-width: 900px;
+  }
+
+  .curved-svg {
+    height: 120px;
+  }
+
+  .symbols-page__title {
+    font-size: 24px;
+  }
+
+  .symbol-card-container {
+    max-width: 900px;
+  }
+
+  .symbol-card__image {
+    max-height: 300px;
+  }
+
+  .symbol-card__title {
+    font-size: 24px;
+  }
+
+  .symbol-card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .symbols-page__cards {
+    max-width: 900px;
+  }
+
+  .curved-svg {
+    height: 120px;
+  }
+
+  .symbols-page__title {
+    font-size: 24px;
+  }
+
+  .symbol-card-container {
+    max-width: 1100px;
+  }
+
+  .symbol-card__image {
+    max-height: 300px;
+  }
+
+  .symbol-card__title {
+    font-size: 24px;
+  }
+
+  .symbol-card__description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .symbols-page__cards {
+    max-width: 720px;
+    gap: 0;
+  }
+  .symbols-page-overlay {
+    padding: 15px 25px;
+    margin: 0 20px;
+  }
+
+  .symbols-page__title {
+    font-size: 24px;
+  }
+
+  .curve-svg {
+    height: 120px;
+  }
+
+  .decorative-line {
+    height: 4px;
+  }
+
+  .symbol-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 720px;
+    margin: 0;
+  }
+
+  .symbol-card__image-container {
+    padding: 50px 0;
+  }
+
+  .symbol-card__title {
+    font-size: 1.5rem;
+  }
+
+  .symbol-card__description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .symbols-page__cards {
+    max-width: 370px;
+  }
+
+  .symbols-page-overlay {
+    padding: 1em 2em;
+  }
+
+  .symbols-page__title {
+    font-size: 18px;
+  }
+
+  .symbol-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 380px;
+  }
+}
