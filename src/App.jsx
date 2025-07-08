@@ -21,6 +21,8 @@ import SantaLucia from "./modules/Headquarters/pages/SantaLucia/SantaLucia";
 import Tulcan from "./modules/Headquarters/pages/Tulcan/Tulcan";
 import AboutUsPage from "./modules/about-us/pages/AboutUsPage/AboutUsPage";
 import PhilosophyPage from "./modules/philosophy-institutional/pages/PhilosophyPage/PhilosophyPage"
+import SymbolsPage from "./modules/institutional-symbols/pages/SymbolsPage/SymbolsPage";
+
 
 function App() {
   return (
@@ -44,6 +46,7 @@ function App() {
         <Route path="/sede/tulcan" element={<Tulcan />} />
         <Route path="/quienes-somos" element={<AboutUsPage />} />
         <Route path="/filosofia" element={<PhilosophyPage />} />
+        <Route path="/simbolos" element={<SymbolsPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
