@@ -258,4 +258,10 @@
   .inscriptions-content-description p {
     font-size: 1em;
   }
+
+  .inscriptions-button.btn-primary {
+    background-color: var(--color-btn-primary-bg);
+    color: var(--color-btn-primary-text);
+    border: 2px solid var(--color-btn-border-primary);
+  }
 }
