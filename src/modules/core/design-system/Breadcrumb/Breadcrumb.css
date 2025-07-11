@@ -1,0 +1,96 @@
+.breadcrumb-container {
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--border-muted);
+}
+
+.breadcrumb-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.breadcrumb-text {
+  font-size: 1em;
+  color: var(--color-text-body-primary);
+  margin: 0;
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-icon {
+  margin: 0 0.5em;
+  font-size: 0.8em;
+  color: var(--color-text-body-secondary, #666);
+}
+
+@media (max-width: 1600px) {
+  .breadcrumb-content {
+    max-width: 1300px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .breadcrumb-content {
+    max-width: 1100px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .breadcrumb-content {
+    max-width: 1100px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .breadcrumb-content {
+    max-width: 900px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .breadcrumb-content {
+    max-width: 900px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-content {
+    max-width: 720px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-content {
+    max-width: 370px;
+  }
+
+  .breadcrumb-text {
+    font-size: 1em;
+  }
+}
