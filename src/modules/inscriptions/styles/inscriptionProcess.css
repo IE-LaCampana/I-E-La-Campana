@@ -1,0 +1,346 @@
+.inscription-process-container {
+  background-color: white;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-weight: var(--font-body-weight);
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.content-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.content-inner {
+  padding: 32px;
+}
+
+.content-header {
+  margin-bottom: 24px;
+}
+
+.content-title {
+  font-size: 32px;
+  font-weight: var(--font-heading-bold-weight);
+  color: var(--color-text-heading-primary);
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.title-underline {
+  width: 64px;
+  height: 4px;
+  background-color: var(--color-text-heading-secondary);
+  border-radius: 2px;
+}
+
+.content-description {
+  margin-bottom: 32px;
+}
+
+.description-text {
+  font-size: 16px;
+  color: var(--color-text-body-primary);
+  line-height: 1.6;
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+.ages-section {
+  margin-top: 32px;
+}
+
+.ages-title {
+  color: var(--color-text-heading-primary);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.ages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.age-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.age-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-text-heading-secondary);
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.age-content {
+  flex: 1;
+}
+
+.age-text {
+  font-size: 16px;
+  color: var(--color-text-body-primary);
+  line-height: 1.6;
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+.grade-name {
+  font-weight: var(--font-body-bold-weight);
+  color: var(--color-text-body-secondary);
+}
+
+@media (max-width: 1600px) {
+  .main-container {
+    max-width: 1300px;
+  }
+
+  .content-title {
+    font-size: 2em;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 1.8em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-container {
+    max-width: 1100px;
+  }
+
+  .content-title {
+    font-size: 2em;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 1.8em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-container {
+    max-width: 1100px;
+  }
+
+  .content-title {
+    font-size: 1.8em;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 2em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .main-container {
+    max-width: 900px;
+  }
+
+  .content-title {
+    font-size: 32px;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 2em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    max-width: 900px;
+  }
+
+  .content-title {
+    font-size: 32px;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 2em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 720px;
+  }
+
+  .content-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content-title {
+    font-size: 24px;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 2em;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    max-width: 370px;
+  }
+
+  .content-title {
+    font-size: 18px;
+  }
+
+  .title-underline {
+    width: 64px;
+    height: 4px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .ages-title {
+    font-size: 18px;
+  }
+
+  .age-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .age-text {
+    font-size: 16px;
+  }
+}
