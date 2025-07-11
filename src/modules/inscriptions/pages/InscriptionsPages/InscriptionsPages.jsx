@@ -1,7 +1,7 @@
 import React from "react";
 import HeroBackground from "../../../../modules/core/design-system/HeroBackground/HeroBackground";
 import { heroBackgroundInscriptionData } from "../../data/heroBackgroundInscriptionData";
-import InscriptionsCard from "../../components/InscriptionsCard/InscriptionsCard";
+import InscriptionCard from "../../components/InscriptionsCard/InscriptionCard";
 import { inscriptionsData } from "../../data/inscriptionsData";
 import InscriptionProcess from "../../components/InscriptionsCard/InscriptionProcess";
 
@@ -10,7 +10,7 @@ const InscriptionsPages = () => {
     <div className="inscriptions-pages">
       <HeroBackground data={heroBackgroundInscriptionData} />
       <InscriptionProcess />
-      <InscriptionsCard inscriptions={inscriptionsData} />
+      <InscriptionCard inscriptions={inscriptionsData} />
     </div>
   );
 };

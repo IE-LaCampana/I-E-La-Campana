@@ -1,8 +1,8 @@
 import React from "react";
-import "../../styles/inscriptionsCard.css"; 
+import "../../styles/inscriptionCard.css";
 
 
-const InscriptionsCard = ({ inscriptions }) => {
+const InscriptionCard = ({ inscriptions }) => {
   return (
     <div className="inscriptions-card-container">
       {inscriptions.map((inscription, index) => (
@@ -13,7 +13,10 @@ const InscriptionsCard = ({ inscriptions }) => {
           <div className="inscriptions-content-description">
             {Array.isArray(inscription.description) ? (
               inscription.description.map((item, itemIndex) => (
-                <div key={itemIndex} className="inscriptions-content-description-item">
+                <div
+                  key={itemIndex}
+                  className="inscriptions-content-description-item"
+                >
                   <i className="bi bi-arrow-right inscriptions-description-icon"></i>
                   <span>{item}</span>
                 </div>
@@ -37,4 +40,4 @@ const InscriptionsCard = ({ inscriptions }) => {
   );
 };
 
-export default InscriptionsCard;
+export default InscriptionCard;
