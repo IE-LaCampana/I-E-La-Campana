@@ -22,6 +22,7 @@ import Tulcan from "./modules/Headquarters/pages/Tulcan/Tulcan";
 import AboutUsPage from "./modules/about-us/pages/AboutUsPage/AboutUsPage";
 import PhilosophyPage from "./modules/philosophy-institutional/pages/PhilosophyPage/PhilosophyPage"
 import SymbolsPage from "./modules/institutional-symbols/pages/SymbolsPage/SymbolsPage";
+import InscriptionsPages from "./modules/inscriptions/pages/InscriptionsPages/InscriptionsPages"
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/quienes-somos" element={<AboutUsPage />} />
         <Route path="/filosofia" element={<PhilosophyPage />} />
         <Route path="/simbolos" element={<SymbolsPage />} />
+        <Route path="/inscripciones" element={<InscriptionsPages />} />
       </Routes>
       <Footer />
       <WhatsAppHelp

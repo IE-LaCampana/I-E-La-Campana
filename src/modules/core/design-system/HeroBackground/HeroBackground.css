@@ -1,0 +1,95 @@
+.Hero-background-container{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 5em;
+}
+
+.hero-background-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-background-title{
+    font-size: 2em;
+    text-align: center;
+    color: var(--color-text-heading-secondary);
+    margin: 0;
+}
+
+.hero-background-title strong{
+    color: var(--color-text-heading-primary);
+    font-weight: 700;
+}
+
+.hero-background-curve{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.hero-background-curve-svg {
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+
+@media(max-width: 1600px){
+    .hero-background-title{
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 1440px){
+    .hero-background-title{
+        font-size: 1.8em;
+    }
+}
+
+@media(max-width: 1280px){
+    .hero-background-title{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 1080px){
+    .hero-background-title{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 992px){
+    .hero-background-title{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 768px){
+    .hero-background-title{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 480px){
+    .hero-background-title{
+        font-size: 18px;
+    }
+    .hero-background-curve-svg {
+        width: 100%;
+        height: 120px;
+        display: block;
+    }
+}
+
+
