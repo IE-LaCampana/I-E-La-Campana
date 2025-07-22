@@ -23,6 +23,7 @@ import AboutUsPage from "./modules/about-us/pages/AboutUsPage/AboutUsPage";
 import PhilosophyPage from "./modules/philosophy-institutional/pages/PhilosophyPage/PhilosophyPage"
 import SymbolsPage from "./modules/institutional-symbols/pages/SymbolsPage/SymbolsPage";
 import InscriptionsPages from "./modules/inscriptions/pages/InscriptionsPages/InscriptionsPages"
+import LibraryPage from "./modules/library/pages/LibraryPage";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/filosofia" element={<PhilosophyPage />} />
         <Route path="/simbolos" element={<SymbolsPage />} />
         <Route path="/inscripciones" element={<InscriptionsPages />} />
+        <Route path="/biblioteca" element={<LibraryPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp

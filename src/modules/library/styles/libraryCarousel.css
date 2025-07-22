@@ -1,0 +1,431 @@
+.library-carousel-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  height: 550px;
+  position: relative;
+  overflow: visible;
+  perspective: 1200px;
+  background-color: #ffffff !important; 
+  background: #ffffff !important;
+}
+
+.carousel-title {
+  margin: 0;
+  color: #081c2e;
+  font-size: 2em;
+  font-weight: 700;
+  position: relative;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.carousel-3d-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1400px;
+  perspective-origin: center 20%;
+  background: transparent;
+}
+
+.carousel-3d-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  background: transparent;
+}
+
+.carousel-book {
+  position: absolute;
+  width: 130px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  margin-left: -65px;
+  margin-top: -120px;
+  transform-style: preserve-3d;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  filter: none !important;
+}
+
+.book-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  background: transparent;
+}
+
+.book-cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transform-style: preserve-3d;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  filter: none !important;
+}
+
+.book-reflection {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  opacity: 0.15; 
+  transform: scaleY(-1);
+  border-radius: 8px;
+  z-index: -1;
+  background: transparent;
+}
+
+.book-image-reflection {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  /* Máscara más sutil para fondo blanco */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.05) 30%,
+    transparent 60%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.05) 30%,
+    transparent 60%
+  );
+}
+
+.book-title {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: var(--color-text-heading-secondary);
+  text-align: center;
+  white-space: nowrap;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+/* Libro activo (central) */
+.carousel-book.active {
+  z-index: 150;
+}
+
+.carousel-book.active .book-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(
+    --color-text-heading-secondary
+  ); 
+}
+
+.carousel-floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.carousel-book:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.carousel-book:hover .book-cover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2), 0 6px 15px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(52, 152, 219, 0.2); 
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.carousel-book.active .book-cover {
+  animation: float 4s ease-in-out infinite;
+}
+
+@media (max-width: 1440px) {
+  .library-carousel-container {
+    max-width: 1300px;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+
+  .carousel-3d-container {
+    width: 100%;
+  }
+
+  .book-title {
+    font-size: 12px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .library-carousel-container {
+    max-width: 1100px;
+    height: 550px;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+
+  .carousel-3d-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .carousel-book {
+    width: 130px;
+    height: 150px;
+  }
+
+  .book-title {
+    font-size: 12px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .library-carousel-container {
+    max-width: 1100px;
+    height: 550px;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+
+  .carousel-3d-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .carousel-book {
+    width: 130px;
+    height: 150px;
+  }
+
+  .book-title {
+    font-size: 12px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .library-carousel-container {
+    max-width: 900px;
+    height: 550px;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+
+  .carousel-3d-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .carousel-book {
+    width: 130px;
+    height: 150px;
+  }
+
+  .book-title {
+    font-size: 12px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .library-carousel-container {
+    max-width: 900px;
+    height: 500px;
+    margin-bottom: 60px;
+  }
+
+  .carousel-title {
+    font-size: 26px;
+    top: 30px;
+  }
+
+  .carousel-3d-container {
+    height: 420px;
+    perspective: 1200px;
+  }
+
+  .carousel-book {
+    width: 110px;
+    height: 140px;
+    margin-left: -55px;
+    margin-top: -100px;
+  }
+
+  .book-title {
+    font-size: 11px;
+    bottom: -28px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 13px;
+  }
+
+  .book-reflection {
+    height: 45%;
+    opacity: 0.12;
+  }
+}
+
+@media (max-width: 768px) {
+  .library-carousel-container {
+    height: 460px;
+    max-width: 720px;
+    margin-bottom: 50px;
+    background-color: #ffffff !important;
+  }
+
+  .carousel-title {
+    font-size: 22px;
+    top: 25px;
+  }
+
+  .carousel-3d-container {
+    height: 380px;
+    perspective: 1000px;
+  }
+
+  .carousel-book {
+    width: 95px;
+    height: 130px;
+    margin-left: -47px;
+    margin-top: -90px;
+  }
+
+  .book-title {
+    font-size: 10px;
+    bottom: -25px;
+    max-width: 100px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 12px;
+  }
+
+  .book-reflection {
+    height: 40%;
+    opacity: 0.1;
+  }
+
+  .carousel-floor {
+    height: 70px;
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .library-carousel-container {
+    max-width: 370px;
+    height: 350px;
+    margin-bottom: 0;
+  }
+
+  .carousel-title {
+    font-size: 18px;
+    top: 20px;
+  }
+
+  .carousel-3d-container {
+    height: 340px;
+    perspective: 800px;
+  }
+
+  .carousel-book {
+    width: 80px;
+    height: 110px;
+    margin-left: -40px;
+    margin-top: -80px;
+  }
+
+  .book-title {
+    font-size: 9px;
+    bottom: -22px;
+    max-width: 80px;
+  }
+
+  .carousel-book.active .book-title {
+    font-size: 11px;
+  }
+
+  .book-reflection {
+    height: 35%;
+    opacity: 0.08;
+  }
+
+  .carousel-floor {
+    height: 50px;
+    background: transparent !important;
+  }
+}
+
+/* Animaciones adicionales */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-book {
+    transition: none;
+  }
+
+  .carousel-book.active .book-cover {
+    animation: none;
+  }
+}
