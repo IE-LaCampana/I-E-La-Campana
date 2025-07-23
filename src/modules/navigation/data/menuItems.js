@@ -34,7 +34,7 @@ export const menuItems = [
       content: "SERVICIOS",
       dropdown: [
         { route: "/biblioteca", icon: "bi bi-book", content: "Biblioteca Escolar" },
-        { route: "/sala-informatica", icon: "bi bi-laptop", content: "Sala de Informática" },
+        { route: "/sala-de-sistemas", icon: "bi bi-laptop", content: "Sala de Sistemas" },
         { route: "/sala-audiovisuales", icon: "bi bi-collection-play", content: "Sala de Audiovisuales" },
         { route: "/laboratorio-ciencias", icon: "bi bi-beaker", content: "Laboratorio de Ciencias" },
         { route: "/comedor-escolar", icon: "bi bi-egg-fried", content: "Comedor Escolar" },

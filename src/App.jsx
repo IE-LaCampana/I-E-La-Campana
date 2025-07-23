@@ -24,6 +24,7 @@ import PhilosophyPage from "./modules/philosophy-institutional/pages/PhilosophyP
 import SymbolsPage from "./modules/institutional-symbols/pages/SymbolsPage/SymbolsPage";
 import InscriptionsPages from "./modules/inscriptions/pages/InscriptionsPages/InscriptionsPages"
 import LibraryPage from "./modules/library/pages/LibraryPage";
+import SystemsLabPage from "./modules/systems-lab";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/simbolos" element={<SymbolsPage />} />
         <Route path="/inscripciones" element={<InscriptionsPages />} />
         <Route path="/biblioteca" element={<LibraryPage />} />
+        <Route path="/sala-de-sistemas" element={<SystemsLabPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
