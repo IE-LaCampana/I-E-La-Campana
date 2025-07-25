@@ -16,14 +16,29 @@
   font-family: var(--font-body);
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.breadcrumb-text span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; 
 }
 
 .breadcrumb-icon {
-  margin: 0 0.5em;
-  font-size: 0.8em;
-  color: var(--color-text-body-secondary, #666);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  background-color: var(--color-btn-primary-bg); 
+  border-radius: 50%;
+  margin: 0 5px; 
+  font-size: 0.75em;
 }
+
+
 
 @media (max-width: 1600px) {
   .breadcrumb-content {

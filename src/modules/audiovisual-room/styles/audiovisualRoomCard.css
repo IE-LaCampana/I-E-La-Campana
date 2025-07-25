@@ -1,0 +1,265 @@
+.audiovisual-card-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.audiovisual-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.audiovisual-card-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 250px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.audiovisual-card-container:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.audiovisual-card-container:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.audiovisual-card-container:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.audiovisual-card-container:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.audiovisual-card-container:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.audiovisual-card-container:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.audiovisual-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.audiovisual-card-container:hover .audiovisual-card {
+  transform: rotateX(180deg);
+}
+
+.audiovisual-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.audiovisual-card-front {
+  display: flex;
+  flex-direction: column;
+}
+
+.audiovisual-card-back {
+  transform: rotateX(180deg);
+  color: white;
+}
+
+.audiovisual-card-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.audiovisual-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.audiovisual-card-container:hover .audiovisual-card-image img {
+  transform: scale(1.05);
+}
+
+.audiovisual-card-title {
+  padding: 1rem;
+  background: var(--color-btn-primary-bg); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+.audiovisual-card-title h3 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.audiovisual-card-back-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  background-color: black;
+}
+
+.audiovisual-card-back-image {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.audiovisual-card-back-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.audiovisual-card-back-info h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  color: var(--color-text-heading-secondary);
+}
+.audiovisual-card-back-description {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0.9;
+}
+
+@media (max-width: 1600px) {
+  .audiovisual-card-grid {
+    max-width: 1300px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .audiovisual-card-grid {
+    max-width: 1100px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .audiovisual-card-grid {
+    max-width: 1100px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .audiovisual-card-grid {
+    max-width: 900px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .audiovisual-card-grid {
+    max-width: 900px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .audiovisual-card-grid {
+    max-width: 720px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .audiovisual-card-grid {
+    max-width: 370px;
+  }
+
+  .audiovisual-card-title h3 {
+    font-size: 1em;
+  }
+
+  .audiovisual-card-back-info h3 {
+    font-size: 1.5em;
+  }
+  .audiovisual-card-back-description {
+    font-size: 1em;
+  }
+}
