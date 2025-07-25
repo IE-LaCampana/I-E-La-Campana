@@ -1,6 +1,7 @@
 import React from "react";
 import "./Breadcrumb.css";
 
+
 const Breadcrumb = ({ items }) => {
   return (
     <div className="breadcrumb-container">
@@ -10,7 +11,9 @@ const Breadcrumb = ({ items }) => {
             <span key={index}>
               {item}
               {index < items.length - 1 && (
-                <i className="bi bi-chevron-right breadcrumb-icon"></i>
+                <span className="breadcrumb-icon">
+                  <i className="bi bi-chevron-double-right"></i>
+                </span>
               )}
             </span>
           ))}
