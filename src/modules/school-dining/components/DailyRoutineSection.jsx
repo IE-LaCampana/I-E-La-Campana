@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/dailyRoutineSection.css";
 import { routineSteps } from "../data/routineStepsData";
+import "../styles/dailyRoutineSection.css";
 
 const DailyRoutineSection = () => {
   return (

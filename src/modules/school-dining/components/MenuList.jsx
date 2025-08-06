@@ -1,5 +1,5 @@
 import React from "react";
-import MenuCard from "../styles/menuCard.css";
+import MenuCard from "./MenuCard";
 
 const MenuList = ({ menuItems = [] }) => {
   return (
