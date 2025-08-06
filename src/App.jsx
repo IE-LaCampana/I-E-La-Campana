@@ -27,6 +27,8 @@ import LibraryPage from "./modules/library/pages/LibraryPage";
 import SystemsLabPage from "./modules/systems-lab";
 import AudiovisualRoomPage from "./modules/audiovisual-room";
 import ChemistryLabPage from "./modules/chemistry-lab/pages/ChemistryLabPage";
+import SchoolDiningPages from "./modules/school-dining/pages/SchoolDiningPages";
+import MenuPages from "./modules/school-dining/pages/MenuPages";
 
 function App() {
   return (
@@ -54,7 +56,10 @@ function App() {
         <Route path="/inscripciones" element={<InscriptionsPages />} />
         <Route path="/biblioteca" element={<LibraryPage />} />
         <Route path="/sala-de-sistemas" element={<SystemsLabPage />} />
+        <Route path="/sala-de-audiovisuales" element={<AudiovisualRoomPage />} />
         <Route path="/laboratorio-de-quimica" element={<ChemistryLabPage />} />
+        <Route path="/comedor-escolar" element={<SchoolDiningPages />} />
+        <Route path="/nuestro-menu" element={<MenuPages />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
