@@ -29,6 +29,7 @@ import AudiovisualRoomPage from "./modules/audiovisual-room";
 import ChemistryLabPage from "./modules/chemistry-lab/pages/ChemistryLabPage";
 import SchoolDiningPages from "./modules/school-dining/pages/SchoolDiningPages";
 import MenuPages from "./modules/school-dining/pages/MenuPages";
+import ExtracurricularPage from "./modules/extracurricular-activities/pages/ExtracurricularPage";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route path="/laboratorio-de-quimica" element={<ChemistryLabPage />} />
         <Route path="/comedor-escolar" element={<SchoolDiningPages />} />
         <Route path="/nuestro-menu" element={<MenuPages />} />
+        <Route path="/actividades-extracurriculares" element={<ExtracurricularPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
