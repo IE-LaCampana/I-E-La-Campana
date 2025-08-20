@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/extracurricularHero.css";
-import { css } from "jquery";
 
-const ExtracurricularHero = ({ title, description }) => {
+const ExtracurricularHero = ({ title, description, backgroundImage }) => {
   return (
-    <div className="extracurricular__hero">
+    <div
+      className="extracurricular__hero"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       <div className="extracurricular-hero__overlay">
         <div className="extracurricular-hero__container">
           <div className="extracurricular-hero__content">
