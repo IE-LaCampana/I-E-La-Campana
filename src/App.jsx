@@ -30,6 +30,8 @@ import ChemistryLabPage from "./modules/chemistry-lab/pages/ChemistryLabPage";
 import SchoolDiningPages from "./modules/school-dining/pages/SchoolDiningPages";
 import MenuPages from "./modules/school-dining/pages/MenuPages";
 import ExtracurricularPage from "./modules/extracurricular-activities/pages/ExtracurricularPage";
+import PedagogicalOutings from "./modules/pedagogical-outings/pages/PedagogicalOutings";
+import OutingDetailPage from "./modules/pedagogical-outings/pages/OutingDetailPage";
 
 function App() {
   return (
@@ -62,6 +64,8 @@ function App() {
         <Route path="/comedor-escolar" element={<SchoolDiningPages />} />
         <Route path="/nuestro-menu" element={<MenuPages />} />
         <Route path="/actividades-extracurriculares" element={<ExtracurricularPage />} />
+        <Route path="/salidas-pedagogicas" element={<PedagogicalOutings />} />
+        <Route path="/salidas-pedagogicas/:id" element={<OutingDetailPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
