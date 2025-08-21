@@ -61,7 +61,7 @@ export const menuItems = [
       dropdown: [
         { route: "/programas-ecologicos", icon: "bi bi-pin", content: "Programas Ecológicos" },
         { route: "/huerta-escolar", icon: "bi bi-graph-up", content: "Huertas Escolares" },
-        { route: "/reciclaje-reduccion", icon: "bi bi-folder", content: "Reciclaje y Reducción" },
+        { route: "/reciclaje", icon: "bi bi-folder", content: "Reciclaje" },
         { route: "/abonos-organicos", icon: "bi bi-megaphone", content: "Abonos Orgánicos" },
       ],
     },
