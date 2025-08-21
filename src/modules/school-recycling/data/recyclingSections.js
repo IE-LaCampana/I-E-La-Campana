@@ -54,5 +54,3 @@ export const recyclingSections = [
     points: [] 
   }
 ];
-
-como hago que la lista de los points por ejemplo apenas comennzao la descripcion esta alejado de los punticos pero cuando se hace 2 columnas el texto no queda alineado con forme comenzo el primer texto el segundo textoqueda alineado es con el punto es no quiero quiero que quede alineado con el primer texto que comenzo aqui te muestro la imagen para que observes muy bien que el texto esta un poco paso hacia la izquierdad y se alinea es con el punto?
