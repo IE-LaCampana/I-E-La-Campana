@@ -33,6 +33,7 @@ import ExtracurricularPage from "./modules/extracurricular-activities/pages/Extr
 import PedagogicalOutings from "./modules/pedagogical-outings/pages/PedagogicalOutings";
 import OutingDetailPage from "./modules/pedagogical-outings/pages/OutingDetailPage";
 import GardenPage from "./modules/school-garden/pages/GardenPage";
+import RecyclingHero from "./modules/school-recycling/components/RecyclingHero";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
         <Route path="/salidas-pedagogicas" element={<PedagogicalOutings />} />
         <Route path="/salidas-pedagogicas/:id" element={<OutingDetailPage />} />
         <Route path="/huerta-escolar" element={<GardenPage />} />
+        <Route path="/reciclaje" element={<RecyclingHero />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
