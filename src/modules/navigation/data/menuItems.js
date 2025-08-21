@@ -60,7 +60,7 @@ export const menuItems = [
       content: "MEDIO AMBIENTE",
       dropdown: [
         { route: "/programas-ecologicos", icon: "bi bi-pin", content: "Programas Ecológicos" },
-        { route: "/huertas-escolares", icon: "bi bi-graph-up", content: "Huertas Escolares" },
+        { route: "/huerta-escolar", icon: "bi bi-graph-up", content: "Huertas Escolares" },
         { route: "/reciclaje-reduccion", icon: "bi bi-folder", content: "Reciclaje y Reducción" },
         { route: "/abonos-organicos", icon: "bi bi-megaphone", content: "Abonos Orgánicos" },
       ],
