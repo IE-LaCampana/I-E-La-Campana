@@ -1,0 +1,110 @@
+.school-garden-card__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: 0 auto;
+  gap: 10rem;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.school-garden-card__container--reverse {
+  flex-direction: row-reverse;
+}
+
+.school-garden-card__text {
+  flex: 1;
+}
+
+.school-garden-card__title {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  font-weight: var(--font-heading-weight);
+  font-style: var(--font-heading-style);
+  text-align: left;
+  margin: 0;
+  color: var(--color-text-heading-primary);
+}
+
+.school-garden-card__description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #595959 !important;
+  letter-spacing: 0.16px;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 680px;
+  text-align: justify;
+}
+
+.school-garden-card__image {
+  width: 100%;
+  max-width: 230px;
+  height: 230px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1600px) {
+  .school-garden-card__container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .school-garden-card__container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .school-garden-card__container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .school-garden-card__container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .school-garden-card__container {
+    max-width: 720px;
+    flex-direction: column; 
+    gap: 2rem; 
+    text-align: center; 
+  }
+
+  .school-garden-card__text {
+    text-align: center; 
+  }
+
+  .school-garden-card__description {
+    max-width: 100%; 
+  }
+
+  .school-garden-card__image {
+    max-width: 180px;
+    height: 180px;
+  }
+  .school-garden-card__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .school-garden-card__container {
+    max-width: 370px;
+  }
+  .school-garden-card__title {
+    font-size: 18px;
+  }
+}

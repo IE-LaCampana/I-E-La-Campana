@@ -1,0 +1,121 @@
+
+.garden-hero {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  height: 500px;
+  color: var(--color-text-body-primary);
+  margin-bottom: 50px;
+}
+
+.garden-hero__overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around; 
+  backdrop-filter: brightness(0.85);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 1200px; 
+  width: 100%; 
+}
+
+.garden-hero__content {
+  display: flex;
+  justify-content: center;
+}
+
+.garden-hero__breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-body-secondary);
+}
+
+.garden-hero__breadcrumb-link {
+  color: var(--color-btn-primary-bg); 
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.garden-hero__breadcrumb-link:hover {
+  color: var(--color-btn-primary-hover-bg);
+  text-decoration: underline;
+}
+
+.garden-hero__title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+.garden-hero__image {
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+
+.garden-hero__image img {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--border-default); 
+}
+
+/* Estilos generales que ya tienes arriba... */
+
+/* 🔽 Responsive para tablets y móviles (768px o menos) */
+@media (max-width: 768px) {
+  .garden-hero {
+    height: auto; /* Ajusta la altura automática */
+    padding: 2rem 1rem; /* Reduce el padding */
+  }
+
+  .garden-hero__overlay {
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    padding: 1.5rem;
+  }
+
+  .garden-hero__title {
+    font-size: 42px; /* Reduce el tamaño del título */
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .garden-hero__image {
+    margin-left: 0; /* Quita margen lateral */
+    margin-top: 1.5rem; /* Agrega separación debajo del texto */
+  }
+
+  .garden-hero__image img {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    max-width: 280px; /* Evita que se haga muy grande */
+    height: auto;
+  }
+}
+
+/* 🔽 Responsive extra (para móviles muy pequeños, 480px o menos) */
+@media (max-width: 480px) {
+  .garden-hero__title {
+    font-size: 32px;
+  }
+
+  .garden-hero__breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .garden-hero__image img {
+    max-width: 220px;
+  }
+}
+
