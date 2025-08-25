@@ -1,0 +1,120 @@
+.compost-hero {
+  background: var(--color-bg-primary);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.compost-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.compost-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.compost-hero__text {
+  max-width: 100%;
+}
+
+.compost-hero__title {
+  color: var(--color-text-heading-primary);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.compost-hero__description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #595959 !important;
+  letter-spacing: 0.16px;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 680px;
+  text-align: justify;
+}
+
+.compost-hero__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compost-hero__image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.compost-hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.compost-hero__image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1600px) {
+  .compost-hero__container {
+    max-width: 1300px;
+  }
+
+  .compost-hero__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .compost-hero__container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .compost-hero {
+    padding: 50px 0;
+  }
+
+  .compost-hero__container {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .compost-hero__title {
+    font-size: 2.5rem;
+  }
+  .compost-hero__cta {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .compost-hero__container {
+    max-width: 370px;
+  }
+
+  .compost-hero__title {
+    font-size: 2rem;
+  }
+}
