@@ -36,6 +36,7 @@ import GardenPage from "./modules/school-garden/pages/GardenPage";
 import RecyclingHero from "./modules/school-recycling/components/RecyclingHero";
 import CompostPage from "./modules/school-compost/pages/CompostPage";
 import CompostablesPage from "./modules/school-compost/pages/CompostablesPage";
+import PraePage from "./modules/prae/pages/PraePage";
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
         <Route path="/reciclaje" element={<RecyclingHero />} />
         <Route path="/abonos-organicos" element={<CompostPage />} />
         <Route path="/organics" element={<CompostablesPage />} />
+        <Route path="/prae" element={<PraePage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
