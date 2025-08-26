@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/PraeCard.css";
+import "../styles/praeCard.css";
 
 const PraeCard = ({ data }) => {
   return (

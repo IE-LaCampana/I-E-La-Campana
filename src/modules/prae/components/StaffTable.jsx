@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/StaffTable.css";
+import "../styles/staffTable.css";
 
 const StaffTable = ({ data }) => {
   return (
