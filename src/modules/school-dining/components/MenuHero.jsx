@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
 import "../styles/menuHero.css";
 
-const MenuHero = ({ title }) => {
-
+const MenuHero = ({ title, backgroundImage }) => {
   return (
-    <div className="hero__menu">
+    <div
+      className="hero__menu"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       <div className="hero-menu__overlay">
         <div className="hero-menu__container">
           <div className="hero-menu__content">
