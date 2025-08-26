@@ -1,0 +1,73 @@
+.staff-table__container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.staff-table__content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.staff-table__header {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.staff-table__row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.staff-table__cell {
+  border: 1px solid #000;
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.staff-table__link {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+  .staff-table__content {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .staff-table__content {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .staff-table__content {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-table__content {
+    max-width: 720px;
+  }
+  .prae-card__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-table__content {
+    max-width: 370px;
+  }
+}
