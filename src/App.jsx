@@ -37,6 +37,7 @@ import RecyclingHero from "./modules/school-recycling/components/RecyclingHero";
 import CompostPage from "./modules/school-compost/pages/CompostPage";
 import CompostablesPage from "./modules/school-compost/pages/CompostablesPage";
 import PraePage from "./modules/prae/pages/PraePage";
+import YatulPage from "./modules/yatul/pages/YatulPage";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
         <Route path="/abonos-organicos" element={<CompostPage />} />
         <Route path="/organics" element={<CompostablesPage />} />
         <Route path="/prae" element={<PraePage />} />
+        <Route path="/yatul" element={<YatulPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp
