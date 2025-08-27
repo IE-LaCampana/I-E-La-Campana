@@ -1,0 +1,52 @@
+.yatulHero__container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 500px; 
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.yatulHero__image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.yatulHero__image--left {
+  border-right: 2px solid white;
+}
+
+.yatulHero__image--right {
+  border-left: 2px solid white;
+}
+
+.yatulHero__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #000;
+  padding: 20px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 2;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.yatulHero__overlay-content{
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.yatulHero__title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: -0.02em;
+    color: var(--color-text-heading-primary);
+}
