@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/yatulCard.css";
+import "../styles/yatulCards.css";
 
 const YatulCard = ({ data }) => {
   return (
