@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../styles/yatulCard.css";
 
 const YatulCard = ({ data }) => {
