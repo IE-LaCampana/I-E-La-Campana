@@ -15,7 +15,6 @@ const OutingCard = ({
   const navigate = useNavigate();
 
   const handleReadMore = () => {
-    // Navegar a la página de detalle con el ID de la salida
     navigate(`/salidas-pedagogicas/${id}`);
   };
 
