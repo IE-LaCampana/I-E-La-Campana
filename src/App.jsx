@@ -39,6 +39,7 @@ import CompostablesPage from "./modules/school-compost/pages/CompostablesPage";
 import PraePage from "./modules/prae/pages/PraePage";
 import YatulPage from "./modules/yatul/pages/YatulPage";
 import ArtsPage from "./modules/arts/pages/ArtsPage";
+import ArtsDetailPage from "./modules/arts/pages/ArtsDetailPage";
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
         <Route path="/prae" element={<PraePage />} />
         <Route path="/yatul" element={<YatulPage />} />
         <Route path="/artes" element={<ArtsPage />} />
+        <Route path="/artes/:id" element={<ArtsDetailPage />} />
 
       </Routes>
       <Footer />
