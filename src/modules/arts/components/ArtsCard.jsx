@@ -10,8 +10,8 @@ const ArtsCard = ({ data }) => {
   const cardsRefs = useRef([]);
   const containerRef = useRef(null);
 
-  const handleViewMore = () => {
-    navigate(`/`);
+  const handleViewMore = (id) => {
+    navigate(`/artes/${id}`);
   };
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const ArtsCard = ({ data }) => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); 
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [data]);
@@ -89,7 +89,7 @@ const ArtsCard = ({ data }) => {
                 <p className="artsCard__description">{item.description}</p>
                 <Button
                   label="DESCUBRA MÁS"
-                  onClick={handleViewMore}
+                  onClick={() => handleViewMore(item.id)} 
                   className="arts-button"
                 />
               </div>
@@ -102,3 +102,4 @@ const ArtsCard = ({ data }) => {
 };
 
 export default ArtsCard;
+

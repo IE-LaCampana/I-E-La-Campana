@@ -1,0 +1,73 @@
+.artsHeroVideo {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artsHeroVideo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.artsHeroVideo__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1d2f;
+  opacity: 0.6; 
+  z-index: -1;
+}
+
+.artsHeroVideo__content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.artsHeroVideo__tag {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #c3c6f7;
+}
+
+.artsHeroVideo__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.artsHeroVideo__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.artsHeroVideo__button {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.artsHeroVideo__button:hover {
+  background-color: #16a34a;
+}

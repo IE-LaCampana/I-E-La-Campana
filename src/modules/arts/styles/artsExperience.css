@@ -1,0 +1,138 @@
+.arts-experience {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.arts-experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.arts-experience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arts-experience-text {
+  background-color: #1a365d;
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  position: relative;
+}
+
+.arts-experience-category {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.arts-experience-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.arts-experience-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arts-experience-img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arts-experience-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .arts-experience-container {
+    gap: 40px;
+    padding: 0 15px;
+  }
+
+  .arts-experience-text {
+    padding: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .arts-experience {
+    padding: 40px 0;
+  }
+
+  .arts-experience-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .arts-experience-text {
+    padding: 25px;
+  }
+
+  .arts-experience-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arts-experience {
+    padding: 30px 0;
+  }
+
+  .arts-experience-container {
+    padding: 0 10px;
+    gap: 25px;
+  }
+
+  .arts-experience-text {
+    padding: 20px;
+  }
+
+  .arts-experience-img {
+    height: 250px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arts-experience-content,
+.arts-experience-image {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.arts-experience-image {
+  animation-delay: 0.2s;
+}
