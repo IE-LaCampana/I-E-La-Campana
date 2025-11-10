@@ -40,6 +40,7 @@ import PraePage from "./modules/prae/pages/PraePage";
 import YatulPage from "./modules/yatul/pages/YatulPage";
 import ArtsPage from "./modules/arts/pages/ArtsPage";
 import ArtsDetailPage from "./modules/arts/pages/ArtsDetailPage";
+import RectorPage from "./modules/rectoria/pages/RectorPage";
 
 function App() {
   return (
@@ -82,6 +83,7 @@ function App() {
         <Route path="/yatul" element={<YatulPage />} />
         <Route path="/artes" element={<ArtsPage />} />
         <Route path="/artes/:id" element={<ArtsDetailPage />} />
+        <Route path="/comunidad/rectoria" element={<RectorPage />} />
 
       </Routes>
       <Footer />
