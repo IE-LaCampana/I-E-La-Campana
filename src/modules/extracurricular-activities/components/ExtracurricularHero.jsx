@@ -1,10 +1,11 @@
+
 import React from "react";
 import "../styles/extracurricularHero.css";
 
-const ExtracurricularHero = ({ title, description, backgroundImage }) => {
+const ExtracurricularHero = ({ title, description, backgroundImage, className = "", }) => {
   return (
     <div
-      className="extracurricular__hero"
+      className={`extracurricular__hero ${className}`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
