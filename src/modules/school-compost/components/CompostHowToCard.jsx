@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/compostHowToCard.css";
 
 
-const CompostHowToCard = ({ data }) => {
+const CompostHowToCard = ({ data, showTitle = true, className = "" }) => {
   return (
-    <div className="compost-howto-wrapper">
+    <div className={`compost-howto-wrapper ${className}`}>
       {data.map((item) => (
         <div
           key={item.id}
@@ -14,7 +14,7 @@ const CompostHowToCard = ({ data }) => {
             <img src={item.image} alt={item.title} />
           </div>
           <div className="compost-card__content">
-            <h3 className="compost-card__title">{item.title}</h3>
+            {showTitle && <h3 className="compost-card__title">{item.title}</h3>}
             <p className="compost-card__description">{item.description}</p>
           </div>
         </div>
@@ -24,8 +24,3 @@ const CompostHowToCard = ({ data }) => {
 };
 
 export default CompostHowToCard;
-
-
-
-
-
