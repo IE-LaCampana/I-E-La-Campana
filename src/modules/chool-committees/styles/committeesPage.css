@@ -1,0 +1,18 @@
+.comittess-hero .extracurricular-hero__content {
+    max-width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto; 
+}
+
+.comittess-hero .extracurricular-hero__overlay {
+    justify-content: center !important;
+}
+
+.committees-card-wrapper .compost-card__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.committees-card-wrapper .compost-card__content{
+    padding: 0;
+}
