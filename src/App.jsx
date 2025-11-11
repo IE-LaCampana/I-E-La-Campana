@@ -41,6 +41,7 @@ import YatulPage from "./modules/yatul/pages/YatulPage";
 import ArtsPage from "./modules/arts/pages/ArtsPage";
 import ArtsDetailPage from "./modules/arts/pages/ArtsDetailPage";
 import RectorPage from "./modules/rectoria/pages/RectorPage";
+import CommitteesPage from "./modules/chool-committees/pages/CommitteesPage";
 
 function App() {
   return (
@@ -84,7 +85,7 @@ function App() {
         <Route path="/artes" element={<ArtsPage />} />
         <Route path="/artes/:id" element={<ArtsDetailPage />} />
         <Route path="/comunidad/rectoria" element={<RectorPage />} />
-
+        <Route path="/comunidad/comite/academico" element={<CommitteesPage />} />
       </Routes>
       <Footer />
       <WhatsAppHelp

@@ -65,6 +65,31 @@ export const menuItems = [
       ],
     },
     {
+    id: "comunidad",
+    route: "/comunidad",
+    content: "COMUNIDAD",
+    dropdown: [
+      { route: "/comunidad/asociacion-padres", icon: "bi bi-people-fill", content: "Asociación de Padres" },
+      { route: "/comunidad/rectoria", icon: "bi bi-people", content: "Rectoría" },
+      { route: "/comunidad/gobierno-escolar", icon: "bi bi-diagram-3", content: "Gobierno Escolar" },
+      { 
+        icon: "bi bi-person-badge", 
+        content: "Comités",
+        submenu: [
+        { route: "/comunidad/comite/consejo-directivo", icon: "bi bi-diagram-3", content: "Consejo Directivo" },
+        { route: "/comunidad/comite/academico", icon: "bi bi-book", content: "Comité Académico" },
+        { route: "/comunidad/comite/cabildo-estudiantil", icon: "bi bi-people", content: "Cabildo Escolar" },
+        { route: "/comunidad/comite/convivencia", icon: "bi bi-shield-check", content: "Comité de Convivencia" },
+        { route: "/comunidad/comite/riesgos-brigadistas", icon: "bi bi-exclamation-triangle", content: "Comité de Riesgos - Brigadistas" },
+        { route: "/comunidad/comite/evaluacion-promocion", icon: "bi bi-clipboard-check", content: "Comité de Evaluación y Promoción" },
+        { route: "/comunidad/comite/bienestar-social", icon: "bi bi-heart", content: "Comité de Bienestar Social" },
+        { route: "/comunidad/comite/comunicaciones", icon: "bi bi-megaphone", content: "Comité de Comunicaciones" },
+        { route: "/comunidad/comite/yatul", icon: "bi bi-people-fill", content: "Comité de Yatul" },
+      ]
+      },
+    ],
+  },
+    {
       id: "proyectos",
       route: "/proyectos",
       content: "PROYECTOS",
@@ -73,17 +98,6 @@ export const menuItems = [
         { route: "/yatul", icon: "bi bi-house-door", content: "Yatul" },
         { route: "/artes", icon: "bi bi-palette", content: "Artes" },
         { route: "/plantas-medicinales", icon: "bi bi-flower1", content: "Plantas Medicinales" },
-      ],
-    },
-    {
-      id: "comunidad",
-      route: "/comunidad",
-      content: "COMUNIDAD",
-      dropdown: [
-        { route: "/comunidad/asociacion-padres", icon: "bi bi-people-fill", content: "Asociación de Padres" },
-        { route: "/comunidad/rectoria", icon: "bi bi-people", content: "Rectoría" },
-        { route: "/comunidad/gobierno-escolar", icon: "bi bi-diagram-3", content: "Gobierno Escolar" },
-        { route: "/comunidad/consejos", icon: "bi bi-person-badge", content: "Consejos" },
       ],
     },
     {
